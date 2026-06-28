@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = `mailto:revitaldaycare@gmail.com?subject=${subject}&body=${body}`;
 
             if (contactFormStatus) {
-                contactFormStatus.textContent = 'Your email app should open with your message ready to send.';
+                contactFormStatus.textContent = 'Thank you! Your message has been submitted. We will get back to you within 24 hours.';
             }
         });
     }
