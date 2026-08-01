@@ -1,0 +1,5 @@
+# Local tooling index (not part of the site)
+.codegraph/
+
+# macOS
+.DS_Store
