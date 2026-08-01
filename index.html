@@ -12,8 +12,8 @@
     <meta property="og:title" content="Revital Daycare | Licensed Preschool in Winnetka, CA">
     <meta property="og:description" content="Now enrolling ages 3-5. Kindergarten readiness, social skills, and creative play in a safe, nurturing environment. Book a tour today!">
     <meta property="og:url" content="https://www.revitaldaycare.com/">
-    <!-- Replace with a real facility photo when available -->
-    <meta property="og:image" content="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop">
+    <!-- Points at the live facility photo once deployed (falls back to stock until you add images/facility.jpg) -->
+    <meta property="og:image" content="https://amiedri74.github.io/revital-daycare/images/facility.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Emoji favicon (no asset file needed; swap for a real .ico later) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌈</text></svg>">
@@ -72,11 +72,11 @@
             </div>
             <!-- Facility photo card -->
             <div class="lg:col-span-5 rounded-3xl h-80 lg:h-96 w-full shadow-xl relative overflow-hidden" role="img" aria-label="Children playing with building blocks in a bright classroom">
-                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop"
+                <img src="images/facility.jpg"
                      alt="Children playing with building blocks in a bright, modern classroom"
-                     class="absolute inset-0 w-full h-full object-cover"
+                     class="hero-facility-photo absolute inset-0 w-full h-full object-cover"
                      loading="eager">
-                <!-- TODO: Swap the Unsplash stock photo above with a photo of your actual facility -->
+                <!-- Drop-in photo: save your real facility photo as images/facility.jpg and the site shows it automatically (stock photo shown until then) -->
                 <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-md">
                     <p class="text-sm font-extrabold text-stone-800">Our Learning Spaces</p>
                     <p class="text-xs text-stone-500 font-semibold">Winnetka, CA · Ages 3–5</p>
@@ -368,6 +368,16 @@
                     submitBtn.innerHTML = originalLabel;
                 }
             });
+        })();
+
+        // Uses images/facility.jpg when present; falls back to a stock photo until the owner adds theirs.
+        (function () {
+            var heroImg = document.querySelector('.hero-facility-photo');
+            if (!heroImg) return;
+            heroImg.onerror = function () {
+                this.onerror = null;
+                this.src = 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop';
+            };
         })();
     </script>
 
