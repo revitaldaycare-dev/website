@@ -1,5 +1,6 @@
-# Local tooling index (not part of the site)
-.codegraph/
+# Local tooling (codegraph index symlink + OpenCode plans) - not part of the site
+.codegraph
+.omo/
 
 # macOS
 .DS_Store
