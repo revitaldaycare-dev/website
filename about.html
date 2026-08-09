@@ -22,37 +22,18 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Revital Daycare",
-      "description": "Quality daycare and early childhood education in Winnetka, CA",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "20628 Londelius St",
-        "addressLocality": "Winnetka",
-        "addressRegion": "CA",
-        "postalCode": "91306",
-        "addressCountry": "US"
+      "@type": "WebPage",
+      "name": "About Revital Daycare",
+      "description": "Learn about Revital Daycare's story, mission, and team in Winnetka, CA",
+      "url": "https://revitaldaycare.com/about.html",
+      "isPartOf": {
+        "@type": "ChildCare",
+        "@id": "https://revitaldaycare.com/#childcare"
       },
-      "telephone": "+1-818-943-5983",
-      "email": "revitaldaycare@gmail.com",
-      "url": "https://revitaldaycare.com",
-      "image": "https://revitaldaycare.com/images/logo.png",
-      "founder": {
-        "@type": "Person",
-        "name": "Revital Edry"
-      },
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Revital Edry",
-          "jobTitle": "Teacher"
-        },
-        {
-          "@type": "Person",
-          "name": "Itamar Nadjar",
-          "jobTitle": "Assistant"
-        }
-      ]
+      "about": {
+        "@type": "ChildCare",
+        "@id": "https://revitaldaycare.com/#childcare"
+      }
     }
     </script>
 </head>
@@ -167,13 +148,13 @@
             <p class="section-subtitle">Experienced, caring professionals dedicated to your child's growth</p>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-image"><img src="images/team-revital.jpg" alt="Revital Edry, Teacher" style="width:100%;height:100%;object-fit:cover;"></div> <!-- Image missing -->
+                    <div class="member-image"><picture><source srcset="images/team-revital.webp" type="image/webp"><img src="images/team-revital.jpg" alt="Revital Edry, Teacher" width="400" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;"></picture></div>
                     <h3>Revital Edry</h3>
                     <p class="role">Teacher</p>
                     <p class="bio">Revital is a dedicated early childhood educator with years of experience working with infants, toddlers, and preschoolers. She holds a degree in early childhood education and is CPR/First Aid certified. Revital created Revital Daycare to bring her vision of warm, play-based learning to Winnetka families.</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-image"><img src="images/team-itamar.jpg" alt="Itamar Nadjar, Assistant" style="width:100%;height:100%;object-fit:cover;"></div> <!-- Image missing -->
+                    <div class="member-image"><picture><source srcset="images/team-itamar.webp" type="image/webp"><img src="images/team-itamar.jpg" alt="Itamar Nadjar, Assistant" width="400" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;"></picture></div>
                     <h3>Itamar Nadjar</h3>
                     <p class="role">Assistant</p>
                     <p class="bio">Itamar brings warmth and energy to the classroom every day. With training in early childhood development and a calm, patient approach, he helps children build social skills, navigate emotions, and discover the joy of learning through play. Itamar is CPR/First Aid certified and fully background-checked.</p>
@@ -190,7 +171,7 @@
             <div class="cert-grid">
                 <div class="cert-item">
                     <h3>Licensed Facility</h3>
-                    <p>California Department of Social Services licensed and in full compliance with state regulations.</p>
+                    <p>California Department of Social Services licensed (License #XXXXXXX) and in full compliance with state regulations.</p>
                 </div>
                 <div class="cert-item">
                     <h3>Staff Training</h3>
@@ -234,7 +215,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (License #XXXXXXX) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>

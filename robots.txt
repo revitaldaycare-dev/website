@@ -23,10 +23,6 @@ Disallow: /
 # Default rules
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
 
 # Sitemap
 Sitemap: https://revitaldaycare.com/sitemap.xml
-
-Crawl-delay: 1

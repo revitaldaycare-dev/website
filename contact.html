@@ -22,32 +22,18 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Revital Daycare",
-      "description": "Quality daycare and early childhood education in Winnetka, CA",
-      "image": "https://revitaldaycare.com/images/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "20628 Londelius St",
-        "addressLocality": "Winnetka",
-        "addressRegion": "CA",
-        "postalCode": "91306",
-        "addressCountry": "US"
+      "@type": "WebPage",
+      "name": "Contact Revital Daycare",
+      "description": "Contact Revital Daycare in Winnetka, CA to schedule a tour or ask about enrollment",
+      "url": "https://revitaldaycare.com/contact.html",
+      "isPartOf": {
+        "@type": "ChildCare",
+        "@id": "https://revitaldaycare.com/#childcare"
       },
-      "telephone": "+1-818-943-5983",
-      "email": "revitaldaycare@gmail.com",
-      "url": "https://revitaldaycare.com",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.2290264,
-        "longitude": -118.5828195
-      },
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "06:30",
-        "closes": "18:00"
-      }]
+      "mainEntity": {
+        "@type": "ChildCare",
+        "@id": "https://revitaldaycare.com/#childcare"
+      }
     }
     </script>
 </head>
@@ -168,9 +154,8 @@
     <section class="map-section">
         <div class="container">
             <h2>Visit Us in Winnetka</h2>
-            <div class="map-placeholder">
-                <p>We are located at 20628 Londelius St, Winnetka, CA 91306 — convenient to the 118 freeway and local neighborhoods.</p>
-                <!-- TODO: Replace with Google Maps embed from Google My Business -->
+            <div class="map-placeholder" style="border-radius:12px;overflow:hidden;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.0!2d-118.5828195!3d34.2290264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDEzJzQ0LjUiTiAxMTjCsDM0JzU4LjIiVw!5e0!3m2!1sen!2sus!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Revital Daycare location map"></iframe>
             </div>
         </div>
     </section>
@@ -238,7 +223,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (License #XXXXXXX) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>

@@ -25,9 +25,13 @@
     {
       "@context": "https://schema.org",
       "@type": "ChildCare",
+      "@id": "https://revitaldaycare.com/#childcare",
       "name": "Revital Daycare",
       "image": "https://revitaldaycare.com/images/logo.png",
       "description": "Quality childcare and early childhood education for infants, toddlers, and preschoolers in Winnetka, CA. Play-based learning, nurturing staff, and a safe environment.",
+      "url": "https://revitaldaycare.com",
+      "telephone": "+1-818-943-5983",
+      "email": "revitaldaycare@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "20628 Londelius St",
@@ -36,14 +40,34 @@
         "postalCode": "91306",
         "addressCountry": "US"
       },
-      "telephone": "+1-818-943-5983",
-      "url": "https://revitaldaycare.com",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.2290264,
+        "longitude": -118.5828195
+      },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "06:30",
         "closes": "18:00"
-      }
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Revital Edry"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Revital Edry",
+          "jobTitle": "Teacher"
+        },
+        {
+          "@type": "Person",
+          "name": "Itamar Nadjar",
+          "jobTitle": "Assistant"
+        }
+      ],
+      "sameAs": []
     }
     </script>
 </head>
@@ -88,6 +112,35 @@
                 <p>Located in the heart of Winnetka, CA, Revital Daycare is a licensed home-based early childhood program serving families with children ages 6 weeks through 5 years. Founded by teacher Revital Edry, our program combines the warmth of a home environment with the structure and educational focus of a professional preschool.</p>
                 <p>We believe that the early years are the most formative, and we take that responsibility seriously. Our play-based, child-centered approach — inspired by Reggio Emilia principles — encourages children to explore, create, and discover at their own pace. Every activity in our daily routine is designed to support cognitive, social-emotional, physical, and language development.</p>
                 <p>With low child-to-staff ratios (3:1 for infants, 4:1 for toddlers, 6:1 for preschoolers), your child receives the individualized attention they deserve. We partner closely with parents through daily updates and open communication to ensure consistency between home and daycare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Families Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Families Choose Revital</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍👧‍👦</div>
+                    <h3>Low Ratios, Big Hearts</h3>
+                    <p>Our 3:1 infant ratio and 4:1 toddler ratio mean your child gets the one-on-one attention they need to thrive. No lost in the crowd here.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Play-Based Learning</h3>
+                    <p>Inspired by Reggio Emilia, our curriculum lets children lead their own discovery through art, music, sensory play, and hands-on exploration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Daily Updates</h3>
+                    <p>You'll never wonder how your child's day went. We send photos, activity updates, and milestone notes so you stay connected.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safe & Secure</h3>
+                    <p>Secure entry, CPR/First Aid certified staff, and regular safety drills. Your child's safety is our top priority.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -213,7 +266,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (License #XXXXXXX) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
