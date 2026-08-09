@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preschool & Early Learning in Winnetka, CA | Revital Daycare</title>
-    <meta name="description" content="Now enrolling ages 3-5 at Revital Daycare in Winnetka, CA. Licensed, women-owned preschool focusing on kindergarten readiness, social skills, and creative play. Secure your spot today!">
+    <meta name="description" content="Now enrolling ages 3-5 in Winnetka, CA at Revital Daycare - a licensed, women-owned preschool for kindergarten readiness and social skills.">
     <meta name="keywords" content="Preschool Winnetka, Child Care San Fernando Valley, Daycare 91306, Kindergarten Readiness Winnetka, Licensed Child Care Ages 3-5">
     <meta name="theme-color" content="#f59e0b">
+    <!-- Canonical: points search engines at the primary URL (trailing-slash home, not /index.html) -->
+    <link rel="canonical" href="https://amiedri74.github.io/revitaldaycare/">
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Revital Daycare | Licensed Preschool in Winnetka, CA">
@@ -17,19 +19,49 @@
     <meta name="twitter:card" content="summary_large_image">
     <!-- Emoji favicon (no asset file needed; swap for a real .ico later) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌈</text></svg>">
-    <!-- Tailwind CSS v4 (browser build). The original markup uses v4 class names (e.g. shadow-xs). -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Static Tailwind CSS (prebuilt; rebuild with: npx @tailwindcss/cli -i input.css -o styles.css --minify) -->
+    <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome 6 for the fa-* icons used throughout the page -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
     </style>
+    <!-- Structured data (ChildCare schema) for rich search results: hours, phone, and location show up in Google.
+         Add your California license number to "identifier" when you share it. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ChildCare",
+        "@id": "https://amiedri74.github.io/revitaldaycare/#organization",
+        "name": "Revital Daycare",
+        "description": "Licensed, women-owned preschool in Winnetka, CA serving children ages 3-5 with kindergarten readiness, social skills, and creative play.",
+        "url": "https://amiedri74.github.io/revitaldaycare/",
+        "telephone": "+1-818-943-5983",
+        "image": "https://amiedri74.github.io/revitaldaycare/images/facility.jpg",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Winnetka",
+            "addressRegion": "CA",
+            "postalCode": "91306",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.2179,
+            "longitude": -118.5710
+        },
+        "openingHours": "Mo-Fr 07:00-18:00",
+        "sameAs": []
+    }
+    </script>
 </head>
 <body class="bg-amber-50/30 text-stone-800 font-sans">
 
     <!-- Navigation Header -->
     <header class="bg-white shadow-xs sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
             <a href="#top" class="flex items-center space-x-2" aria-label="Revital Daycare home">
                 <span class="text-2xl font-black text-amber-500 tracking-tight">REVITAL <span class="text-emerald-500">DAYCARE</span></span>
             </a>
@@ -38,11 +70,22 @@
                 <a href="#curriculum" class="hover:text-amber-500 transition">Our Program</a>
                 <a href="#location" class="hover:text-amber-500 transition">Location</a>
             </nav>
-            <div>
+            <div class="flex items-center gap-3">
                 <a href="#tour-form" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-5 rounded-full transition transform hover:scale-105 inline-block shadow-md">
                     Book a Tour
                 </a>
+                <button id="menu-toggle" type="button" class="md:hidden w-11 h-11 flex items-center justify-center rounded-xl border-2 border-stone-200 text-stone-700 hover:border-amber-400 hover:text-amber-500 transition" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-lg" id="menu-icon" aria-hidden="true"></i>
+                </button>
             </div>
+            </div>
+
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 border-t border-stone-100 pt-4 space-y-3 font-medium text-stone-600" aria-label="Mobile navigation">
+                <a href="#about" class="block hover:text-amber-500 transition">About Us</a>
+                <a href="#curriculum" class="block hover:text-amber-500 transition">Our Program</a>
+                <a href="#location" class="block hover:text-amber-500 transition">Location</a>
+                <a href="#tour-form" class="block bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-center py-2 px-5 rounded-full">Book a Tour</a>
+            </nav>
         </div>
     </header>
 
@@ -75,6 +118,7 @@
                 <img src="images/facility.jpg"
                      alt="Children playing with building blocks in a bright, modern classroom"
                      class="hero-facility-photo absolute inset-0 w-full h-full object-cover"
+                     width="1200" height="800"
                      loading="eager">
                 <!-- Drop-in photo: save your real facility photo as images/facility.jpg and the site shows it automatically (stock photo shown until then) -->
                 <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-md">
@@ -170,6 +214,40 @@
                 <p class="text-stone-600 leading-relaxed">
                     A secure, modern, women-owned facility managed by highly passionate, fully certified childhood educators dedicated to child safety standards.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section id="faq" class="py-16 max-w-4xl mx-auto px-4" aria-labelledby="faq-heading">
+        <div class="text-center mb-12 space-y-3">
+            <h2 id="faq-heading" class="text-3xl font-black text-stone-900">Frequently Asked Questions</h2>
+            <p class="text-stone-600 font-medium">Quick answers for parents exploring preschool options in Winnetka.</p>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>What ages does Revital Daycare serve?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">We enroll children ages 3 to 5, right in the heart of Winnetka and throughout the San Fernando Valley.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>Is Revital Daycare licensed?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">Yes. We are a fully licensed, women-owned early learning center run by certified childhood educators, with a low 1:6 maximum child-to-teacher ratio.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>What does a typical day look like?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">We follow a structured daily routine built around circle time, learning stations, and outdoor play. We are open Monday through Friday, 7:00 AM to 6:00 PM.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>How do you prepare children for kindergarten?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">Through early literacy foundations, fine motor skills, language comprehension, and basic math concepts - plus social and emotional growth like sharing, conflict resolution, self-regulation, and empathy.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>How do I schedule a tour?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">Fill out the quick inquiry form below and we'll reach out by text or email within 24 hours to confirm your slot. Tours are available Monday through Friday while spaces last.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-stone-100">
+                <h3 class="text-lg font-bold text-stone-900 flex items-start gap-3"><i class="fas fa-circle-question text-amber-500 mt-1" aria-hidden="true"></i>Can I call instead of using the form?</h3>
+                <p class="text-stone-600 font-medium leading-relaxed mt-2">Of course - call us at <a href="tel:+18189435983" class="text-emerald-600 font-bold hover:text-emerald-700 transition">(818) 943-5983</a> during business hours and we'd be happy to help.</p>
             </div>
         </div>
     </section>
@@ -378,6 +456,19 @@
                 this.onerror = null;
                 this.src = 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop';
             };
+        })();
+
+        // Opens/closes the mobile navigation panel; swaps the hamburger icon to an X.
+        (function () {
+            var toggle = document.getElementById('menu-toggle');
+            var menu = document.getElementById('mobile-menu');
+            var icon = document.getElementById('menu-icon');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function () {
+                var open = menu.classList.toggle('hidden') === false;
+                toggle.setAttribute('aria-expanded', String(open));
+                icon.className = open ? 'fas fa-xmark text-lg' : 'fas fa-bars text-lg';
+            });
         })();
     </script>
 

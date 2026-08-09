@@ -4,3 +4,6 @@
 
 # macOS
 .DS_Store
+
+# Local Tailwind build tooling (rebuilt on demand; styles.css is committed)
+node_modules/

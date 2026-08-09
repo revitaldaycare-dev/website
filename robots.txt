@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amiedri74.github.io/revitaldaycare/sitemap.xml
