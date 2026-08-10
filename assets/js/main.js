@@ -1,4 +1,4 @@
-// Submits the tour form to Web3Forms via fetch; shows success/error without a page reload.
+// Submits the tour form via fetch; shows success/error without a page reload.
 (function () {
     var form = document.getElementById('tour-form-el');
     if (!form) return;
