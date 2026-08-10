@@ -1,7 +1,2 @@
-*.pptx
-*.odp
-*.svg
-/*.jpg
-/*.png
-QUICKSTART.md
-README.md
+node_modules/
+package-lock.json
