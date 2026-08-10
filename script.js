@@ -36,42 +36,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactFormStatus = document.getElementById('contactFormStatus');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', async function(event) {
+        contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalLabel = submitBtn ? submitBtn.textContent : '';
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending…';
-            }
+            const name = (document.getElementById('contactName') || {}).value || '';
+            const email = (document.getElementById('contactEmail') || {}).value || '';
+            const phone = (document.getElementById('contactPhone') || {}).value || '';
+            const program = (document.getElementById('contactProgram') || {}).value || '';
+            const message = (document.getElementById('contactMessage') || {}).value || '';
 
-            try {
-                const res = await fetch('/.functions/submit', {
-                    method: 'POST',
-                    body: new FormData(contactForm),
-                    headers: { 'Accept': 'application/json' }
-                });
+            const subject = encodeURIComponent('Tour Request from ' + name + ' — Revital Daycare');
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Phone: ' + phone + '\n' +
+                'Program of Interest: ' + program + '\n\n' +
+                'Message:\n' + message
+            );
 
-                if (res.ok) {
-                    contactForm.reset();
-                    if (contactFormStatus) {
-                        contactFormStatus.textContent = 'Thank you! Your message has been submitted. We will get back to you within 24 hours.';
-                    }
-                } else {
-                    if (contactFormStatus) {
-                        contactFormStatus.textContent = 'Something went wrong. Please try again or call us at (818) 943-5983.';
-                    }
-                }
-            } catch (err) {
-                if (contactFormStatus) {
-                    contactFormStatus.textContent = 'Something went wrong. Please try again or call us at (818) 943-5983.';
-                }
-            } finally {
-                if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalLabel;
-                }
+            window.location.href = 'mailto:revitaldaycare@gmail.com?subject=' + subject + '&body=' + body;
+
+            if (contactFormStatus) {
+                contactFormStatus.textContent = 'Opening your email client… If it didn\'t open, please email us directly at revitaldaycare@gmail.com.';
             }
         });
     }
