@@ -1,13 +1,16 @@
-// Cloudflare Pages Function — handles tour request form submissions
-// Sends email via Cloudflare Email Sending to revitaldaycare@gmail.com
-
-export async function onRequestPost(context) {
+export async function onRequest(context) {
   const { request, env } = context;
+
+  if (request.method !== "POST") {
+    return new Response(JSON.stringify({ error: "Method not allowed" }), {
+      status: 405,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
 
   try {
     const formData = await request.formData();
 
-    // Honeypot check — if filled, silently return success (bot)
     if (formData.get("botcheck")) {
       return new Response(JSON.stringify({ ok: true }), {
         status: 200,
@@ -22,7 +25,6 @@ export async function onRequestPost(context) {
     const startDate = formData.get("desired_start_date") || "";
     const message = formData.get("message") || "";
 
-    // Validate required fields
     if (!parentName || !phone || !email || !childAge || !startDate) {
       return new Response(JSON.stringify({ ok: false, error: "Missing required fields" }), {
         status: 400,
@@ -54,8 +56,15 @@ export async function onRequestPost(context) {
       message ? `Message: ${message}` : "",
     ].filter(Boolean).join("\n");
 
-    // Send email via Cloudflare Email Sending binding
-    const result = await env.EMAIL.send({
+    if (!env.EMAIL) {
+      console.error("EMAIL binding not configured");
+      return new Response(JSON.stringify({ ok: false, error: "Email service not configured" }), {
+        status: 503,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    await env.EMAIL.send({
       to: "revitaldaycare@gmail.com",
       from: { email: "noreply@revitaldaycare.com", name: "Revital Daycare Website" },
       replyTo: email,
@@ -75,9 +84,4 @@ export async function onRequestPost(context) {
       headers: { "Content-Type": "application/json" },
     });
   }
-}
-
-// Handle non-POST methods
-export async function onRequest() {
-  return new Response("Method not allowed", { status: 405 });
 }
