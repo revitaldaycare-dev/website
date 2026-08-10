@@ -32,30 +32,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Contact form opens a mail client with the submitted details
     const contactForm = document.getElementById('contactForm');
     const contactFormStatus = document.getElementById('contactFormStatus');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', async function(event) {
             event.preventDefault();
 
-            const formData = new FormData(contactForm);
-            const name = formData.get('name') || 'A parent';
-            const email = formData.get('email') || 'revitaldaycare@gmail.com';
-            const phone = formData.get('phone') || 'Not provided';
-            const program = formData.get('program') || 'General inquiry';
-            const message = formData.get('message') || '';
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalLabel = submitBtn ? submitBtn.textContent : '';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending…';
+            }
 
-            const subject = encodeURIComponent(`Website inquiry from ${name}`);
-            const body = encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProgram interest: ${program}\n\nMessage:\n${message}`
-            );
+            try {
+                const res = await fetch('/.functions/submit', {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
+                });
 
-            window.location.href = `mailto:revitaldaycare@gmail.com?subject=${subject}&body=${body}`;
-
-            if (contactFormStatus) {
-                contactFormStatus.textContent = 'Thank you! Your message has been submitted. We will get back to you within 24 hours.';
+                if (res.ok) {
+                    contactForm.reset();
+                    if (contactFormStatus) {
+                        contactFormStatus.textContent = 'Thank you! Your message has been submitted. We will get back to you within 24 hours.';
+                    }
+                } else {
+                    if (contactFormStatus) {
+                        contactFormStatus.textContent = 'Something went wrong. Please try again or call us at (818) 943-5983.';
+                    }
+                }
+            } catch (err) {
+                if (contactFormStatus) {
+                    contactFormStatus.textContent = 'Something went wrong. Please try again or call us at (818) 943-5983.';
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalLabel;
+                }
             }
         });
     }
