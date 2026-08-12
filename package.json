@@ -1,13 +1,5 @@
 {
-  "name": "revital-daycare-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Static marketing site for Revital Daycare (Winnetka, CA) served from GitHub Pages. Custom styling is prebuilt from index.html classes via Tailwind CSS.",
-  "scripts": {
-    "build:css": "tailwindcss -i build/input.css -o assets/css/styles.css --minify"
-  },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "tailwindcss": "^4.3.3"
+    "wrangler": "^4.120.0"
   }
 }
