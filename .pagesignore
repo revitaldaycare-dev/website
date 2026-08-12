@@ -11,4 +11,4 @@ node_modules/
 
 # Private local working folders - never deploy
 drive-download-20260809T173317Z-1-001/
-science/
+science\ /
