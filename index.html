@@ -8,15 +8,19 @@
     <meta name="keywords" content="Preschool Winnetka, Child Care San Fernando Valley, Daycare 91306, Kindergarten Readiness Winnetka, Licensed Child Care Ages 3-5">
     <meta name="theme-color" content="#f59e0b">
     <!-- Canonical: points search engines at the primary URL (trailing-slash home, not /index.html) -->
-    <link rel="canonical" href="https://amiedri74.github.io/revitaldaycare/">
+    <link rel="canonical" href="https://revitaldaycare.com/">
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Revital Daycare | Licensed Preschool in Winnetka, CA">
     <meta property="og:description" content="Now enrolling ages 3-5. Kindergarten readiness, social skills, and creative play in a safe, nurturing environment. Book a tour today!">
-    <meta property="og:url" content="https://www.revitaldaycare.com/">
-    <!-- Points at the live facility photo once deployed (falls back to stock until you add images/facility.jpg) -->
-    <meta property="og:image" content="https://amiedri74.github.io/revitaldaycare/images/facility.jpg">
+    <meta property="og:url" content="https://revitaldaycare.com/">
+    <meta property="og:image" content="https://revitaldaycare.com/images/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Revital Daycare">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revital Daycare | Licensed Preschool in Winnetka, CA">
+    <meta name="twitter:description" content="Now enrolling ages 3-5. Kindergarten readiness, social skills, and creative play in a safe, nurturing environment. Book a tour today!">
+    <meta name="twitter:image" content="https://revitaldaycare.com/images/og-image.png">
     <!-- Emoji favicon (no asset file needed; swap for a real .ico later) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌈</text></svg>">
     <!-- Static Tailwind CSS (prebuilt; rebuild with: npm run build:css) -->
@@ -32,15 +36,21 @@
     {
         "@context": "https://schema.org",
         "@type": "ChildCare",
-        "@id": "https://amiedri74.github.io/revitaldaycare/#organization",
+        "@id": "https://revitaldaycare.com/#childcare",
         "name": "Revital Daycare",
         "description": "Licensed, women-owned preschool in Winnetka, CA serving children ages 3-5 with kindergarten readiness, social skills, and creative play.",
-        "url": "https://amiedri74.github.io/revitaldaycare/",
+        "url": "https://revitaldaycare.com/",
         "telephone": "+1-818-943-5983",
-        "image": "https://amiedri74.github.io/revitaldaycare/images/facility.jpg",
+        "email": "revitaldaycare@gmail.com",
+        "image": "https://revitaldaycare.com/images/og-image.png",
         "priceRange": "$$",
+        "identifier": {
+            "@type": "GovernmentInvoice",
+            "name": "CDSS License #197312451"
+        },
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "20628 Londelius St",
             "addressLocality": "Winnetka",
             "addressRegion": "CA",
             "postalCode": "91306",
@@ -48,11 +58,28 @@
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 34.2179,
-            "longitude": -118.5710
+            "latitude": 34.2290264,
+            "longitude": -118.5828195
         },
-        "openingHours": "Mo-Fr 07:00-18:00",
-        "sameAs": []
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "06:30",
+            "closes": "18:00"
+        },
+        "areaServed": [
+            "Winnetka", "Woodland Hills", "Canoga Park", "Chatsworth", "San Fernando Valley"
+        ],
+        "founder": { "@type": "Person", "name": "Revital Edry" },
+        "employee": [
+            { "@type": "Person", "name": "Revital Edry", "jobTitle": "Teacher" },
+            { "@type": "Person", "name": "Itamar Nadjar", "jobTitle": "Assistant" }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/revitaldaycare",
+            "https://www.instagram.com/revitaldaycare",
+            "https://www.yelp.com/biz/revital-daycare-winnetka"
+        ]
     }
     </script>
 </head>
@@ -389,7 +416,7 @@
         <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
                 <p class="text-xl font-black text-amber-500 tracking-tight">REVITAL <span class="text-emerald-500">DAYCARE</span></p>
-                <p class="text-sm font-medium mt-1">Licensed · Women-Owned · Winnetka, CA</p>
+                <p class="text-sm font-medium mt-1">Licensed (CDSS #197312451) · Women-Owned · Winnetka, CA</p>
             </div>
             <div class="text-center md:text-right space-y-1 text-sm font-semibold">
                 <p><a href="tel:+18189435983" class="hover:text-amber-400 transition">(818) 943-5983</a></p>

@@ -1,4 +1,28 @@
+# Revital Daycare - robots.txt
+
+# Allow AI search crawlers (for AI Overviews, ChatGPT, Perplexity, Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block training crawlers
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Default rules
 User-agent: *
 Allow: /
 
-Sitemap: https://amiedri74.github.io/revitaldaycare/sitemap.xml
+# Sitemap
+Sitemap: https://revitaldaycare.com/sitemap.xml

@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://amiedri74.github.io/revitaldaycare/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <loc>https://revitaldaycare.com/</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/about.html</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/programs.html</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/gallery.html</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/contact.html</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/privacy.html</loc>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/woodland-hills.html</loc>
+        <lastmod>2026-08-12</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/canoga-park.html</loc>
+        <lastmod>2026-08-12</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/chatsworth.html</loc>
+        <lastmod>2026-08-12</lastmod>
     </url>
 </urlset>
