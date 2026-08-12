@@ -131,11 +131,27 @@ a:hover {
     color: white;
 }
 
-.btn-light {
-    background-color: white;
-    color: var(--primary);
-    border: 2px solid white;
-}
+    .btn-light {
+        background-color: #fff;
+        color: var(--primary);
+    }
+
+    .btn-call {
+        display: inline-block;
+        margin-top: 1.25rem;
+        background-color: #2d9cd3;
+        color: #fff;
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 0.85rem 1.9rem;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 4px 14px rgba(45, 156, 211, 0.4);
+    }
+    .btn-call:hover { background-color: #2390bd; }
+    @media (max-width: 768px) {
+        .btn-call { display: block; text-align: center; font-size: 1.3rem; }
+    }
 
 .btn-light:hover {
     background-color: var(--cream);
@@ -192,10 +208,43 @@ a:hover {
     font-weight: 600;
 }
 
-.nav-menu .btn-cta:hover {
-    background-color: #F5C94E;
-    color: var(--dark-gray);
-}
+    .nav-menu .btn-cta:hover {
+        background-color: #F5C94E;
+        color: var(--dark-gray);
+    }
+
+    .nav-dropdown { position: relative; }
+
+    .nav-dropdown > a::after {
+        content: " \25BE";
+        font-size: 0.7em;
+        vertical-align: middle;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 175px;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        border-radius: 6px;
+        padding: 8px 0;
+        list-style: none;
+        z-index: 200;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 9px 18px;
+        color: var(--text);
+        white-space: nowrap;
+    }
+
+    .dropdown-menu a:hover { background-color: #f2f7fa; color: var(--primary); }
+
+    .nav-dropdown:hover .dropdown-menu { display: block; }
 
 .hamburger {
     display: none;
@@ -1136,6 +1185,17 @@ section {
     .nav-menu.active {
         display: flex;
     }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-menu.active .dropdown-menu {
+            display: block;
+            position: static;
+            box-shadow: none;
+            padding: 4px 0 4px 16px;
+            min-width: auto;
+        }
+
+        .nav-dropdown > a::after { content: ""; }
 
     .hamburger {
         display: flex;
