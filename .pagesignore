@@ -1,0 +1,14 @@
+# Local tooling / plans - not part of the site
+.omo/
+.codegraph
+.wrangler
+
+# macOS
+.DS_Store
+
+# Build tooling
+node_modules/
+
+# Private local working folders - never deploy
+drive-download-20260809T173317Z-1-001/
+science/
