@@ -1,0 +1,2 @@
+# Exclude repo/audit docs from site deployments (git archive -> wrangler pages deploy)
+*.md export-ignore
