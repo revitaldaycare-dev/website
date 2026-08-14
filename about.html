@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Revital Daycare's story, mission, and team in Winnetka, CA. Our experienced staff provides nurturing, play-based early childhood education in a safe, caring facility.">
+    <meta name="description" content="Learn about Revital Daycare's story, mission, and team in Winnetka, CA. Experienced staff providing nurturing, play-based early childhood education.">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>About Revital Daycare - Our Story &amp; Team</title>
     <meta property="og:title" content="About Revital Daycare - Our Story &amp; Team">
@@ -22,18 +22,58 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "About Revital Daycare",
-      "description": "Learn about Revital Daycare's story, mission, and team in Winnetka, CA",
-      "url": "https://revitaldaycare.com/about",
-      "isPartOf": {
-        "@type": "ChildCare",
-        "@id": "https://revitaldaycare.com/#childcare"
-      },
-      "about": {
-        "@type": "ChildCare",
-        "@id": "https://revitaldaycare.com/#childcare"
-      }
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://revitaldaycare.com/about#webpage",
+          "name": "About Revital Daycare",
+          "description": "Learn about Revital Daycare's story, mission, and team in Winnetka, CA",
+          "url": "https://revitaldaycare.com/about",
+          "isPartOf": { "@id": "https://revitaldaycare.com/#childcare" },
+          "about": { "@id": "https://revitaldaycare.com/#childcare" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://revitaldaycare.com/#organization",
+          "name": "Revital Daycare",
+          "url": "https://revitaldaycare.com",
+          "telephone": "+1-818-943-5983",
+          "email": "revitaldaycare@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "20628 Londelius St",
+            "addressLocality": "Winnetka",
+            "addressRegion": "CA",
+            "postalCode": "91306",
+            "addressCountry": "US"
+          },
+          "founder": {
+            "@type": "Person",
+            "@id": "https://revitaldaycare.com/#revital",
+            "name": "Revital Edry",
+            "jobTitle": "Teacher and Founder"
+          },
+          "employee": [
+            {
+              "@type": "Person",
+              "@id": "https://revitaldaycare.com/#revital",
+              "name": "Revital Edry",
+              "jobTitle": "Teacher"
+            },
+            {
+              "@type": "Person",
+              "@id": "https://revitaldaycare.com/#itamar",
+              "name": "Itamar Nadjar",
+              "jobTitle": "Assistant"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/revitaldaycare",
+            "https://www.instagram.com/revitaldaycare",
+            "https://www.yelp.com/biz/revital-daycare-winnetka"
+          ]
+        }
+      ]
     }
     </script>
 </head>
