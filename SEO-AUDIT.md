@@ -1,91 +1,66 @@
 # SEO Audit — Revital Daycare
 
-**Date:** 2026-06-28 (revised)
-**Type:** Static HTML/CSS/JS daycare website (source audit — site not deployed)
-**Domain:** revitaldaycare.com (placeholder — update before deploy)
+**Date:** 2026-08-14 (revised)
+**Type:** Live audit — deployed site (Cloudflare Workers)
+**Domain:** https://revitaldaycare.com (www → 301 apex)
 
 ---
 
-## SEO Health Score: 81/100 ▲ (+3)
+## SEO Health Score: 86/100 ▲ (+5)
 
-| Category | Weight | Score | Notes |
-|----------|--------|-------|-------|
-| On-Page SEO | 20% | 94 | Titles, meta, heading order, alt text, OG/Twitter all solid |
-| Technical SEO | 22% | 78 | Canonical tags, robots.txt, sitemap all good; no IndexNow, placeholder domain |
-| Schema / Structured Data | 10% | 82 | JSON-LD on all 5 pages (ChildCare, Organization, WebPage+ItemList, LocalBusiness) |
-| Content Quality | 23% | 65 | Homepage expanded (~600 words), bios enhanced with credentials |
-| Performance | 10% | 94 | Static site, minimal assets; unused reading-illustration.png removed |
-| AI Search Readiness | 10% | 75 | llms.txt, AI crawlers allowed, FAQ section; no external brand signals |
-| Images | 5% | 95 | All 22 images exist, descriptive alt text, proper sizes, lazy loading |
+| Category | Weight | Prior | Now | Notes |
+|----------|--------|-------|-----|-------|
+| On-Page SEO | 20% | 94 | 95 | Titles/canonical/OG/viewport 9/9; all metas ≤160 chars |
+| Technical SEO | 22% | 78 | 90 | Placeholder domain resolved, all 200s, HSTS + security headers, asset caching; no IndexNow |
+| Schema / Structured Data | 10% | 82 | 88 | Valid JSON-LD on all 9 pages; about=Organization, contact=ChildCare, programs=WebPage+ItemList |
+| Content Quality | 23% | 65 | 70 | Refocused to ages 3-5, service-area pages differentiated; still thin at ~260 words |
+| Performance | 10% | 94 | 100 | 8.8-15.6 KB pages, 0.12-0.42 s, HTTP/2, TLS valid |
+| AI Search Readiness | 10% | 75 | 80 | robots.txt + llms.txt fully updated to ages 3-5, 6:1 ratio |
+| Images | 5% | 95 | 95 | 22 images, descriptive alt, lazy loading, immutable cache |
 
-**Weighted score:** 80.8 → **81/100**
+**Weighted score:** 86.5 → **86/100**
 
 ---
 
-## Fixed Since Last Audit
+## Site Refocus (2026-08-14)
+
+- **Infant/toddler content removed site-wide** — site now serves preschool ages 3–5 (Preschool 3–4, Pre-K 4–5)
+- Ratios simplified to 6:1; pricing corrected to **$1,500/month** full-time, 10% sibling discount
+- Retired infant/toddler photos excluded from deployment via `.assetsignore` (404 live)
+- `llms.txt` + `sitemap.xml` updated (Last-Modified 2026-08-14)
+
+## Fixed This Audit Cycle
 
 | Fix | Detail |
 |-----|--------|
-| All 22 images | `images/` directory populated with all referenced photos |
-| favicon.ico | 16×16 PNG icon created in root |
-| OG image | `images/og-image.jpg` (1200×630, 57KB) created |
-| Placeholders | All `YOUR_*` placeholders removed from contact.html |
-| Heading order | Footer `<h4>` changed to `<h3>` on all 5 pages (no more h2→h4 skip) |
-| Color contrast | `.section-subtitle` and `.form-note` changed from `#888` to `#555` (WCAG AA) |
-| Homepage content | Added ~200-word Welcome section (now ~600 words total) |
-| Staff bios | Revital: degree in ECE + years of experience. Itamar: training + certifications |
-| Unused image | `reading-illustration.png` (2.5MB) removed — not referenced anywhere |
-| Lighthouse a11y | index.html: accessibility 88→**100**, best-practices 96→**100** |
-
----
+| Meta descriptions | 7 over-length metas trimmed to 142–158 chars (was up to 187) |
+| Home title | 62 → 58 chars (OG/twitter synced) |
+| Schema enrichment | about.html: WebPage → @graph with Organization + founder/employees; contact.html: dangling ChildCare @id → self-contained ChildCare node with geo + hours |
+| Security headers | Added in worker: HSTS (31536000, includeSubDomains), X-Content-Type-Options, Referrer-Policy, X-Frame-Options |
+| Caching | HTML `max-age=3600, must-revalidate`; images/CSS/JS `max-age=31536000, immutable` |
+| Service-area pages | woodland-hills / canoga-park / chatsworth intros now unique with local landmarks (The Village/Warner Center, Pierce College, Santa Susana Pass/Stoney Point) |
 
 ## Remaining Issues
 
-### Critical (block deploy)
-- **Domain placeholder** — `revitaldaycare.com` used in sitemap.xml, robots.txt, OG URLs, and JSON-LD `url` fields (31 locations). Must replace with real domain before deploy.
-
 ### High
-- **No privacy policy** — Contact form collects names, emails, phone numbers, and child ages. Need `/privacy.html`.
-- **Contact form uses mailto:** — Opens email app instead of server-side submission. No analytics/tracking possible.
+- **No Google Business Profile / citations** — biggest off-site gap; no external brand signals.
 
 ### Medium
-- **Founded date missing** — "Our Story" omits the founding year. Restore with correct year.
-- **No social media links** — Footer lacks Instagram, Facebook, or other social profiles.
-- **No blog/news section** — Adding content regularly would improve freshness signals.
+- **Service-area pages thin** — ~257–265 words each. Expand with unique content per city (local parks, school districts, commute detail).
+- **No blog/news section** — no freshness cadence for rankings.
 
 ### Low
-- **No external brand signals** — No GBP, LinkedIn, or directory citations established.
-- **JSON-LD missing @id** — Schemas lack stable `@id` URIs for cross-referencing.
-- **GEMINI.md empty** — 0 bytes, serves no purpose.
-- **No IndexNow** — Submit on deploy for faster indexing.
+- **No IndexNow** — submit on each deploy for faster Bing/Copilot indexing.
+- **Homepage ~509 words** — a citable definitional answer block (134–167 words) in the first 60 words would improve AI citation.
+- **GEMINI.md empty** — 0 bytes, harmless.
+- **Founded date missing** — "Our Story" omits founding year.
 
 ---
 
-## Lighthouse Scores (After Fixes)
+## Live Verification (2026-08-14)
 
-| Page | Perf | A11y | BP | SEO |
-|------|:----:|:----:|:--:|:---:|
-| index | **100** | **100** | **100** | **100** |
-| about | 97 | 87 | 96 | 100 |
-| programs | 95 | 89 | 96 | 100 |
-| gallery | 99 | 96 | 96 | 100 |
-| contact | 85 | 87 | 73 | 100 |
-
----
-
-## Deployment Checklist
-
-- [x] Create `images/` directory with all 22 referenced photos
-- [x] Create `favicon.ico` in root directory
-- [x] Create OG image (`images/og-image.jpg`)
-- [x] Fix heading order (h4→h3 in footer)
-- [x] Fix color contrast (section-subtitle, form-note)
-- [x] Expand homepage content
-- [x] Enhance staff bios
-- [x] Remove unused 2.5MB image
-- [ ] Replace `revitaldaycare.com` with real domain (31 locations)
-- [ ] Add `/privacy.html`
-- [ ] Fix contact form (server-side submission)
-- [ ] Add Google Maps embed
-- [ ] Submit sitemap to Google Search Console
-- [ ] Set up Google Business Profile
+- All 9 pages → 200; sitemap.xml 9/9 URLs live; canonical 9/9; exactly one h1 per page
+- JSON-LD parses on all 9 pages; zero infant/toddler references in content or schema
+- www.revitaldaycare.com → 301 apex; retired images → 404
+- NAP consistent across all 9 pages (name, 20628 Londelius St, (818) 943-5983, revitaldaycare@gmail.com)
+- Contact page: 6 FAQ Q&As (FAQPage schema) — strong AI citation source
