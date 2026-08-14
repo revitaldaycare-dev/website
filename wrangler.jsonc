@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "revitaldaycare",
+  "main": "./src/index.js",
+  "compatibility_date": "2026-08-14",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "revitaldaycare.com", "custom_domain": true },
+    { "pattern": "www.revitaldaycare.com", "custom_domain": true }
+  ]
+}
