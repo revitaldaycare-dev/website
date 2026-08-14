@@ -18,3 +18,11 @@ wrangler.jsonc
 .pagesignore
 images/.gitkeep
 src/
+
+# Retired infant/toddler photos (site now serves ages 3-5 only)
+images/infant-classroom.jpg
+images/infant-classroom.webp
+images/toddler-classroom.jpg
+images/toddler-classroom.webp
+images/toddler-play.jpg
+images/toddler-play.webp

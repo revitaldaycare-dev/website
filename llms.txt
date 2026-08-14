@@ -1,10 +1,10 @@
 # Revital Daycare
-Last-Modified: 2026-06-28
-> Quality childcare and early childhood education in Winnetka, CA. Serving infants (6 weeks+), toddlers, and preschoolers with play-based, nurturing care.
+Last-Modified: 2026-08-14
+> Quality preschool and early childhood education in Winnetka, CA. Serving children ages 3-5 with play-based, nurturing care and kindergarten readiness.
 
 ## About
 - [About Us](https://revitaldaycare.com/about.html): Our story, mission, team, and facility in Winnetka, CA
-- [Programs](https://revitaldaycare.com/programs.html): Infant care, toddler program, and preschool details
+- [Programs](https://revitaldaycare.com/programs.html): Preschool (3-4) and Pre-K (4-5) program details
 - [Gallery](https://revitaldaycare.com/gallery.html): Photos of our classrooms, activities, and special moments
 - [Contact](https://revitaldaycare.com/contact.html): Schedule a tour, FAQ, and contact information
 
@@ -14,10 +14,10 @@ Last-Modified: 2026-06-28
 - Email: revitaldaycare@gmail.com
 - Hours: Monday-Friday, 6:30 AM - 6:00 PM
 - Founded by Revital Edry
-- Ages served: 6 weeks through 5 years
+- Ages served: 3 through 5 years (preschool and Pre-K)
 - Teacher: Revital Edry
 - Assistant: Itamar Nadjar
-- Ratios: 3:1 infants, 4:1 toddlers, 6:1 preschoolers
+- Child-to-staff ratio: 6:1
 - Full-time and part-time enrollment available
 - Play-based, child-centered approach inspired by Reggio Emilia principles
 - Licensed by California Department of Social Services
