@@ -1,0 +1,20 @@
+# Local tooling / plans - never publish
+.omo/
+.codegraph/
+.wrangler/
+.git/
+node_modules/
+drive-download-20260809T173317Z-1-001/
+science\ /
+
+# Tooling metadata - never publish
+*.md
+package.json
+package-lock.json
+wrangler.jsonc
+.assetsignore
+.gitignore
+.gitattributes
+.pagesignore
+images/.gitkeep
+src/
