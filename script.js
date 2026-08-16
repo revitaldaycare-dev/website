@@ -45,20 +45,46 @@ document.addEventListener('DOMContentLoaded', function() {
             const program = (document.getElementById('contactProgram') || {}).value || '';
             const message = (document.getElementById('contactMessage') || {}).value || '';
 
-            const subject = encodeURIComponent('Tour Request from ' + name + ' — Revital Daycare');
-            const body = encodeURIComponent(
-                'Name: ' + name + '\n' +
-                'Email: ' + email + '\n' +
-                'Phone: ' + phone + '\n' +
-                'Program of Interest: ' + program + '\n\n' +
-                'Message:\n' + message
-            );
-
-            window.location.href = 'mailto:revitaldaycare@gmail.com?subject=' + subject + '&body=' + body;
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('program', program);
+            formData.append('message', message);
 
             if (contactFormStatus) {
-                contactFormStatus.textContent = 'Opening your email client… If it didn\'t open, please email us directly at revitaldaycare@gmail.com.';
+                contactFormStatus.textContent = 'Sending your message…';
             }
+
+            fetch('/api/contact', {
+                method: 'POST',
+                body: formData
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    if (contactFormStatus) {
+                        contactFormStatus.textContent = 'Thank you! Your message was sent. We\'ll respond within 24 business hours.';
+                    }
+                    contactForm.reset();
+                } else {
+                    throw new Error('Server response was not OK');
+                }
+            })
+            .catch(function() {
+                var subject = encodeURIComponent('Tour Request from ' + name + ' — Revital Daycare');
+                var body = encodeURIComponent(
+                    'Name: ' + name + '\n' +
+                    'Email: ' + email + '\n' +
+                    'Phone: ' + phone + '\n' +
+                    'Program of Interest: ' + program + '\n\n' +
+                    'Message:\n' + message
+                );
+                window.location.href = 'mailto:revitaldaycare@gmail.com?subject=' + subject + '&body=' + body;
+
+                if (contactFormStatus) {
+                    contactFormStatus.textContent = 'Opening your email client… If it didn\'t open, please email us directly at revitaldaycare@gmail.com.';
+                }
+            });
         });
     }
 
@@ -86,39 +112,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Lazy loading images (optional - for future image optimization)
+// Lazy loading images (deferred until idle)
 if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                observer.unobserve(img);
-            }
+    var requestIdleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+    requestIdleCallback(function() {
+        var imageObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
         });
-    });
 
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
+        document.querySelectorAll('img[data-src]').forEach(function(img) {
+            imageObserver.observe(img);
+        });
     });
 }
 
-// Scroll animations (optional - adds fade-in effect)
-const scrollAnimationElements = document.querySelectorAll('.feature-card, .program-card, .testimonial-card, .team-member');
+// Scroll animations (deferred until idle to avoid blocking initial render)
+if ('IntersectionObserver' in window) {
+    var requestIdleCallback2 = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+    requestIdleCallback2(function() {
+        var scrollAnimationElements = document.querySelectorAll('.feature-card, .program-card, .testimonial-card, .team-member');
+        if (scrollAnimationElements.length === 0) return;
 
-if ('IntersectionObserver' in window && scrollAnimationElements.length > 0) {
-    const elementObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-visible');
-                elementObserver.unobserve(entry.target);
-            }
+        var elementObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                    elementObserver.unobserve(entry.target);
+                }
+            });
         });
-    });
 
-    scrollAnimationElements.forEach(element => {
-        element.classList.add('animate-fade');
-        elementObserver.observe(element);
+        scrollAnimationElements.forEach(function(element) {
+            element.classList.add('animate-fade');
+            elementObserver.observe(element);
+        });
     });
 }
