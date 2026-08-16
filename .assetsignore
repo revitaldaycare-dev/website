@@ -22,7 +22,13 @@ src/
 # Retired infant/toddler photos (site now serves ages 3-5 only)
 images/infant-classroom.jpg
 images/infant-classroom.webp
+images/infant-classroom-400w.webp
+images/infant-classroom-800w.webp
 images/toddler-classroom.jpg
 images/toddler-classroom.webp
+images/toddler-classroom-400w.webp
+images/toddler-classroom-800w.webp
 images/toddler-play.jpg
 images/toddler-play.webp
+images/toddler-play-400w.webp
+images/toddler-play-800w.webp
