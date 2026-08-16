@@ -1,6 +1,12 @@
 / /index.html 200
 /about /about.html 200
-/programs /programs.html 200
+/program /program.html 200
+/programs /program.html 301
+/programs.html /program.html 301
+/environment /environment.html 200
+/parent-reviews /parent-reviews.html 200
+/reviews /parent-reviews.html 301
+/faq /faq.html 200
 /gallery /gallery.html 200
 /contact /contact.html 200
 /privacy /privacy.html 200

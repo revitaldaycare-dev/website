@@ -2,38 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://revitaldaycare.com/</loc>
-        <lastmod>2026-08-14</lastmod>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/about</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/program.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/programs</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/about.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/gallery</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/environment.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/contact</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/parent-reviews.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/privacy</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/faq.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/woodland-hills</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/gallery.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/canoga-park</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/contact.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
     <url>
-        <loc>https://revitaldaycare.com/chatsworth</loc>
-        <lastmod>2026-08-14</lastmod>
+        <loc>https://revitaldaycare.com/woodland-hills.html</loc>
+        <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/chatsworth.html</loc>
+        <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/canoga-park.html</loc>
+        <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/privacy.html</loc>
+        <lastmod>2026-08-16</lastmod>
     </url>
 </urlset>
