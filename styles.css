@@ -215,6 +215,22 @@ a:hover {
 
     .nav-dropdown { position: relative; }
 
+    .nav-cta-persistent {
+        display: inline-block;
+        background-color: var(--accent);
+        color: var(--dark-gray);
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-cta-persistent:hover {
+        background-color: #F5C94E;
+        color: var(--dark-gray);
+    }
+
     .nav-dropdown > a::after {
         content: " \25BE";
         font-size: 0.7em;

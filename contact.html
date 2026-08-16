@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance: Resource Hints -->
+    <link rel="preconnect" href="https://revitaldaycare.com">
+    <link rel="preconnect" href="https://images.revitaldaycare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://cloudflareinsights.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="/script.js" as="script">
+    <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
+    
+    <!-- Third-party preconnect -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Revital Daycare in Winnetka, CA to schedule a tour, ask about enrollment and pricing, or learn more about our preschool program for children ages 3-5.">
@@ -9,7 +28,7 @@
     <meta property="og:title" content="Contact &amp; Schedule a Tour | Revital Daycare">
     <meta property="og:description" content="Contact Revital Daycare in Winnetka, CA to schedule a tour, ask about enrollment, or learn more about our childcare programs.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://revitaldaycare.com/contact">
+    <meta property="og:url" content="https://revitaldaycare.com/contact.html">
     <meta property="og:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact &amp; Schedule a Tour | Revital Daycare">
@@ -17,78 +36,28 @@
     <meta name="twitter:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Revital Daycare">
-    <link rel="canonical" href="https://revitaldaycare.com/contact">
+    <link rel="canonical" href="https://revitaldaycare.com/contact.html">
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://revitaldaycare.com/contact#webpage",
-          "name": "Contact Revital Daycare",
-          "description": "Contact Revital Daycare in Winnetka, CA to schedule a tour or ask about enrollment",
-          "url": "https://revitaldaycare.com/contact",
-          "isPartOf": { "@id": "https://revitaldaycare.com/#childcare" },
-          "mainEntity": { "@id": "https://revitaldaycare.com/#childcare" }
-        },
-        {
-          "@type": "ChildCare",
-          "@id": "https://revitaldaycare.com/#childcare",
-          "name": "Revital Daycare",
-          "url": "https://revitaldaycare.com",
-          "telephone": "+1-818-943-5983",
-          "email": "revitaldaycare@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "20628 Londelius St",
-            "addressLocality": "Winnetka",
-            "addressRegion": "CA",
-            "postalCode": "91306",
-            "addressCountry": "US"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 34.2290264,
-            "longitude": -118.5828195
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "06:30",
-            "closes": "18:00"
-          }
-        }
-      ]
-    }
-    </script>
-</head>
+    
+    
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation (shared header pattern) -->
+    <nav class="navbar" role="banner">
         <div class="container">
             <div class="nav-brand">
-                <a href="/" class="logo">Revital Daycare</a>
+                <a href="index.html" class="logo">Revital Daycare</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="programs">Programs</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li class="nav-dropdown">
-                    <a href="woodland-hills">Service Areas</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="woodland-hills">Woodland Hills</a></li>
-                        <li><a href="canoga-park">Canoga Park</a></li>
-                        <li><a href="chatsworth">Chatsworth</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact" class="active btn-cta">Contact</a></li>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="index.html" role="menuitem">Home</a></li>
+                <li><a href="program.html" role="menuitem">Our Program</a></li>
+                <li><a href="about.html" role="menuitem">About Us</a></li>
+                <li><a href="environment.html" role="menuitem">Our Environment</a></li>
+                <li><a href="parent-reviews.html" role="menuitem">Parent Reviews</a></li>
+                <li><a href="faq.html" role="menuitem">FAQ</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" role="button" aria-label="Schedule a tour">Schedule a Tour</a>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -120,12 +89,12 @@
 
                     <div class="info-item">
                         <h3>📞 Phone</h3>
-                        <p><a href="tel:+1-818-943-5983">(818) 943-5983</a></p>
+                        <p><a href="tel:+1-818-943-5983" data-track="phone_click">(818) 943-5983</a></p>
                     </div>
 
                     <div class="info-item">
                         <h3>✉️ Email</h3>
-                        <p><a href="mailto:revitaldaycare@gmail.com">revitaldaycare@gmail.com</a></p>
+                        <p><a href="mailto:revitaldaycare@gmail.com" data-track="email_click">revitaldaycare@gmail.com</a></p>
                     </div>
 
                     <div class="info-item">
@@ -145,7 +114,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
                     <h2>Send us a Message</h2>
-                    <form id="contactForm" class="contact-form">
+                    <form id="contactForm" class="contact-form" action="/api/contact" method="POST" data-track="contact_form_submit">
                         <div class="form-group">
                             <label for="contactName">Your name</label>
                             <input id="contactName" name="name" type="text" placeholder="Jane Doe" required>
@@ -188,8 +157,9 @@
     <section class="map-section">
         <div class="container">
             <h2>Visit Us in Winnetka</h2>
-            <div class="map-placeholder" style="border-radius:12px;overflow:hidden;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.0!2d-118.5828195!3d34.2290264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDEzJzQ0LjUiTiAxMTjCsDM0JzU4LjIiVw!5e0!3m2!1sen!2sus!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Revital Daycare location map"></iframe>
+            <div class="map-placeholder" style="border-radius:12px;overflow:hidden;background:var(--cream);padding:2rem;text-align:center;">
+                <p style="margin-bottom:1rem;font-size:1.1rem;">20628 Londelius St, Winnetka, CA 91306</p>
+                <a href="https://www.google.com/maps/place/20628+Londelius+St,+Winnetka,+CA+91306/@34.2290264,-118.5828195,17z" target="_blank" rel="noopener" class="btn" style="display:inline-block;">Open in Google Maps</a>
             </div>
         </div>
     </section>
@@ -228,11 +198,21 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta-section">
+    <section class="cta-section" style="background:var(--primary);">
         <div class="container">
-            <h2>Ready to Learn More?</h2>
-            <p>Schedule your tour today and see why families choose Revital Daycare.</p>
-            <a href="#contact" class="btn btn-light">Schedule a Tour</a>
+            <h2 style="color:var(--cream);">Come Meet Us</h2>
+            <p style="color:var(--cream);">The best way to know whether Revital is the right fit is to come see it for yourself. Take a tour, meet us, and ask every question you have.</p>
+            <a href="#contact" class="btn btn-light" data-track="tour_cta_click">Schedule a Tour</a>
+            <a href="contact.html" class="btn btn-outline" style="margin-left:10px;color:var(--cream);border-color:var(--cream);">Contact Revital</a>
+        </div>
+    </section>
+
+    <!-- Review CTA (preserved from existing content) -->
+    <section class="review-section" style="background:var(--secondary);padding:2rem 0;text-align:center;">
+        <div class="container">
+            <h2 style="color:#fff;margin-bottom:0.5rem;">Love Revital Daycare?</h2>
+            <p style="color:#fff;margin-bottom:1rem;">Share your experience and help other families find us!</p>
+            <a href="https://www.google.com/search?q=Revital+Daycare+Winnetka+CA+reviews" target="_blank" rel="noopener" class="btn btn-light">⭐ Leave a Google Review</a>
         </div>
     </section>
 
@@ -248,76 +228,38 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Phone: <a href="tel:+1-818-943-5983">(818) 943-5983</a><br>
-                    Email: <a href="mailto:revitaldaycare@gmail.com">revitaldaycare@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1-818-943-5983" data-track="phone_click">(818) 943-5983</a><br>
+                    Email: <a href="mailto:revitaldaycare@gmail.com" data-track="email_click">revitaldaycare@gmail.com</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Hours</h3>
                     <p>Monday - Friday<br>6:30 AM - 6:00 PM</p>
                 </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="program.html">Our Program</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="environment.html">Our Environment</a><br>
+                    <a href="parent-reviews.html">Parent Reviews</a><br>
+                    <a href="faq.html">FAQ</a><br>
+                    <a href="contact.html">Contact</a></p>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What are your hours of operation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We're open Monday through Friday, 6:30 AM to 6:00 PM. We're closed on weekends and major holidays."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What ages do you serve?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We serve children ages 3 through 5 years in our preschool and Pre-K programs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I schedule a tour?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Contact us via phone, email, or the form above — we'd love to show you around!"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is your child-to-staff ratio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We maintain a 6:1 child-to-staff ratio in our preschool programs, ensuring personalized attention."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer flexible scheduling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we offer full-time (5 days/week) and part-time (3 days/week) options to fit your family's needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's included in your curriculum?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our programs include academics, arts, music, outdoor play, and social-emotional learning."
-          }
-        }
-      ]
-    }
+        <script src="schemas.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
     </script>
 </body>
 </html>

@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance: Resource Hints -->
+    <link rel="preconnect" href="https://revitaldaycare.com">
+    <link rel="preconnect" href="https://images.revitaldaycare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://cloudflareinsights.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="/script.js" as="script">
+    <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
+    
+    <!-- Third-party preconnect -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse photos of Revital Daycare's classrooms, activities, and special moments in Winnetka, CA. See our nurturing environment and engaging preschool programs.">
@@ -9,7 +28,7 @@
     <meta property="og:title" content="Photo Gallery | Revital Daycare">
     <meta property="og:description" content="Browse photos of our classrooms, learning activities, and special moments at Revital Daycare in Winnetka, CA.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://revitaldaycare.com/gallery">
+    <meta property="og:url" content="https://revitaldaycare.com/gallery.html">
     <meta property="og:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Photo Gallery | Revital Daycare">
@@ -17,7 +36,7 @@
     <meta name="twitter:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Revital Daycare">
-    <link rel="canonical" href="https://revitaldaycare.com/gallery">
+    <link rel="canonical" href="https://revitaldaycare.com/gallery.html">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
@@ -25,36 +44,28 @@
       "@type": "WebPage",
       "name": "Revital Daycare Photo Gallery",
       "description": "Photos of classrooms, activities, and special moments at Revital Daycare in Winnetka, CA",
-      "url": "https://revitaldaycare.com/gallery"
+      "url": "https://revitaldaycare.com/gallery.html"
     }
     </script>    
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation (shared header pattern) -->
+    <nav class="navbar" role="banner">
         <div class="container">
             <div class="nav-brand">
-                <a href="/" class="logo">Revital Daycare</a>
+                <a href="index.html" class="logo">Revital Daycare</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="programs">Programs</a></li>
-                <li><a href="gallery" class="active">Gallery</a></li>
-                <li class="nav-dropdown">
-                    <a href="woodland-hills">Service Areas</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="woodland-hills">Woodland Hills</a></li>
-                        <li><a href="canoga-park">Canoga Park</a></li>
-                        <li><a href="chatsworth">Chatsworth</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact" class="btn-cta">Contact</a></li>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="index.html" role="menuitem">Home</a></li>
+                <li><a href="program.html" role="menuitem">Our Program</a></li>
+                <li><a href="about.html" role="menuitem">About Us</a></li>
+                <li><a href="environment.html" role="menuitem">Our Environment</a></li>
+                <li><a href="parent-reviews.html" role="menuitem">Parent Reviews</a></li>
+                <li><a href="faq.html" role="menuitem">FAQ</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" role="button" aria-label="Schedule a tour">Schedule a Tour</a>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -160,7 +171,7 @@
         <div class="container">
             <h2>Want to See More?</h2>
             <p>Schedule a tour to experience Revital Daycare in person and meet our team! You'll see our vibrant, nurturing environment and get a real feel for the care and activities we provide.</p>
-            <a href="contact" class="btn btn-primary">Schedule a Tour</a>
+            <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
         </div>
     </section>
 
@@ -169,7 +180,7 @@
         <div class="container">
             <h2>Ready to Join Our Community?</h2>
             <p>Contact us today to learn more and schedule a visit.</p>
-            <a href="contact" class="btn btn-light">Get in Touch</a>
+            <a href="contact.html" class="btn btn-light">Get in Touch</a>
         </div>
     </section>
 
@@ -185,8 +196,8 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Phone: <a href="tel:+1-818-943-5983">(818) 943-5983</a><br>
-                    Email: <a href="mailto:revitaldaycare@gmail.com">revitaldaycare@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1-818-943-5983" data-track="phone_click">(818) 943-5983</a><br>
+                    Email: <a href="mailto:revitaldaycare@gmail.com" data-track="email_click">revitaldaycare@gmail.com</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Hours</h3>
@@ -194,11 +205,19 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
 </body>
 </html>

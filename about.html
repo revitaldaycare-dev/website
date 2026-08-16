@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance: Resource Hints -->
+    <link rel="preconnect" href="https://revitaldaycare.com">
+    <link rel="preconnect" href="https://images.revitaldaycare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://cloudflareinsights.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="/script.js" as="script">
+    <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
+    
+    <!-- Third-party preconnect -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Revital Daycare's story, mission, and team in Winnetka, CA. Experienced staff providing nurturing, play-based early childhood education.">
@@ -9,7 +28,7 @@
     <meta property="og:title" content="About Revital Daycare - Our Story &amp; Team">
     <meta property="og:description" content="Learn about Revital Daycare's mission, team, and commitment to quality early childhood education in Winnetka, CA.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://revitaldaycare.com/about">
+    <meta property="og:url" content="https://revitaldaycare.com/about.html">
     <meta property="og:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Revital Daycare - Our Story &amp; Team">
@@ -17,92 +36,28 @@
     <meta name="twitter:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Revital Daycare">
-    <link rel="canonical" href="https://revitaldaycare.com/about">
+    <link rel="canonical" href="https://revitaldaycare.com/about.html">
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://revitaldaycare.com/about#webpage",
-          "name": "About Revital Daycare",
-          "description": "Learn about Revital Daycare's story, mission, and team in Winnetka, CA",
-          "url": "https://revitaldaycare.com/about",
-          "isPartOf": { "@id": "https://revitaldaycare.com/#childcare" },
-          "about": { "@id": "https://revitaldaycare.com/#childcare" }
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://revitaldaycare.com/#organization",
-          "name": "Revital Daycare",
-          "url": "https://revitaldaycare.com",
-          "telephone": "+1-818-943-5983",
-          "email": "revitaldaycare@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "20628 Londelius St",
-            "addressLocality": "Winnetka",
-            "addressRegion": "CA",
-            "postalCode": "91306",
-            "addressCountry": "US"
-          },
-          "founder": {
-            "@type": "Person",
-            "@id": "https://revitaldaycare.com/#revital",
-            "name": "Revital Edry",
-            "jobTitle": "Teacher and Founder"
-          },
-          "employee": [
-            {
-              "@type": "Person",
-              "@id": "https://revitaldaycare.com/#revital",
-              "name": "Revital Edry",
-              "jobTitle": "Teacher"
-            },
-            {
-              "@type": "Person",
-              "@id": "https://revitaldaycare.com/#itamar",
-              "name": "Itamar Nadjar",
-              "jobTitle": "Assistant"
-            }
-          ],
-          "sameAs": [
-            "https://www.facebook.com/revitaldaycare",
-            "https://www.instagram.com/revitaldaycare",
-            "https://www.yelp.com/biz/revital-daycare-winnetka"
-          ]
-        }
-      ]
-    }
-    </script>
-</head>
+    
+    
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation (shared header pattern) -->
+    <nav class="navbar" role="banner">
         <div class="container">
             <div class="nav-brand">
-                <a href="/" class="logo">Revital Daycare</a>
+                <a href="index.html" class="logo">Revital Daycare</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="about" class="active">About</a></li>
-                <li><a href="programs">Programs</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li class="nav-dropdown">
-                    <a href="woodland-hills">Service Areas</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="woodland-hills">Woodland Hills</a></li>
-                        <li><a href="canoga-park">Canoga Park</a></li>
-                        <li><a href="chatsworth">Chatsworth</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact" class="btn-cta">Contact</a></li>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="index.html" role="menuitem">Home</a></li>
+                <li><a href="program.html" role="menuitem">Our Program</a></li>
+                <li><a href="about.html" class="active" role="menuitem">About Us</a></li>
+                <li><a href="environment.html" role="menuitem">Our Environment</a></li>
+                <li><a href="parent-reviews.html" role="menuitem">Parent Reviews</a></li>
+                <li><a href="faq.html" role="menuitem">FAQ</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" role="button" aria-label="Schedule a tour">Schedule a Tour</a>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -199,7 +154,7 @@
                     <div class="member-image"><picture><source srcset="images/team-revital.webp" type="image/webp"><img src="images/team-revital.jpg" alt="Revital Edry, Teacher" width="400" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;"></picture></div>
                     <h3>Revital Edry</h3>
                     <p class="role">Teacher</p>
-                    <p class="bio">Revital is a dedicated early childhood educator with years of experience working with preschool-aged children. She holds a degree in early childhood education and is CPR/First Aid certified. Revital created Revital Daycare to bring her vision of warm, play-based learning to Winnetka families.</p>
+                    <p class="bio">Revital is a dedicated early childhood educator with 10 years of experience working with preschool-aged children. She holds a degree in early childhood education and is CPR/First Aid certified. Revital created Revital Daycare to bring her vision of warm, play-based learning to Winnetka families.</p>
                 </div>
                 <div class="team-member">
                     <div class="member-image"><picture><source srcset="images/team-itamar.webp" type="image/webp"><img src="images/team-itamar.jpg" alt="Itamar Nadjar, Assistant" width="400" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;"></picture></div>
@@ -234,11 +189,21 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta-section">
+    <section class="cta-section" style="background:var(--primary);">
         <div class="container">
-            <h2>Ready to Learn More?</h2>
-            <p>Schedule a tour and see how Revital Daycare can be the perfect fit for your family.</p>
-            <a href="contact" class="btn btn-light">Schedule a Tour</a>
+            <h2 style="color:var(--cream);">Come Meet Us</h2>
+            <p style="color:var(--cream);">The best way to know whether Revital is the right fit is to come see it for yourself. Take a tour, meet us, and ask every question you have.</p>
+            <a href="contact.html" class="btn btn-light" data-track="tour_cta_click">Schedule a Tour</a>
+            <a href="contact.html" class="btn btn-outline" style="margin-left:10px;color:var(--cream);border-color:var(--cream);">Contact Revital</a>
+        </div>
+    </section>
+
+    <!-- Review CTA (preserved from existing content) -->
+    <section class="review-section" style="background:var(--secondary);padding:2rem 0;text-align:center;">
+        <div class="container">
+            <h2 style="color:#fff;margin-bottom:0.5rem;">Love Revital Daycare?</h2>
+            <p style="color:#fff;margin-bottom:1rem;">Share your experience and help other families find us!</p>
+            <a href="https://www.google.com/maps/place/Revital+Daycare/@34.2290264,-118.5828195,17z/" target="_blank" rel="noopener" class="btn btn-light">Leave a Google Review</a>
         </div>
     </section>
 
@@ -254,20 +219,38 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Phone: <a href="tel:+1-818-943-5983">(818) 943-5983</a><br>
-                    Email: <a href="mailto:revitaldaycare@gmail.com">revitaldaycare@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1-818-943-5983" data-track="phone_click">(818) 943-5983</a><br>
+                    Email: <a href="mailto:revitaldaycare@gmail.com" data-track="email_click">revitaldaycare@gmail.com</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Hours</h3>
                     <p>Monday - Friday<br>6:30 AM - 6:00 PM</p>
                 </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="program.html">Our Program</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="environment.html">Our Environment</a><br>
+                    <a href="parent-reviews.html">Parent Reviews</a><br>
+                    <a href="faq.html">FAQ</a><br>
+                    <a href="contact.html">Contact</a></p>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+        <script src="schemas.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
 </body>
 </html>

@@ -1,106 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance: Resource Hints -->
+    <link rel="preconnect" href="https://revitaldaycare.com">
+    <link rel="preconnect" href="https://images.revitaldaycare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://cloudflareinsights.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="/script.js" as="script">
+    <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
+    
+    <!-- Third-party preconnect -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Revital Daycare in Winnetka, CA - Quality preschool for children ages 3-5. Play-based Pre-K learning in a safe, nurturing environment. Schedule a tour today.">
-    <meta name="keywords" content="preschool, pre-k, daycare, childcare, Winnetka, early childhood education">
+    <meta name="description" content="Revital Daycare in Winnetka, CA. A warm, personalized preschool for children ages 3-5. Play-based learning, low 6:1 ratio. Schedule a tour today.">
     <meta name="author" content="Revital Daycare">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Revital Daycare - Quality Preschool (Ages 3-5) in Winnetka</title>
-    <meta property="og:title" content="Revital Daycare - Quality Preschool (Ages 3-5) in Winnetka">
-    <meta property="og:description" content="Quality preschool and early childhood education for children ages 3-5 in Winnetka, CA.">
+    <title>Preschool in Winnetka, CA | Revital Daycare &amp; Pre-K</title>
+    <meta property="og:title" content="Preschool in Winnetka, CA | Revital Daycare &amp; Pre-K">
+    <meta property="og:description" content="Warm, personalized preschool for children ages 3-5 in Winnetka, CA. Play-based learning in a nurturing home environment. Schedule a tour.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://revitaldaycare.com/">
     <meta property="og:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Revital Daycare - Quality Preschool (Ages 3-5) in Winnetka">
-    <meta name="twitter:description" content="Quality preschool and early childhood education for children ages 3-5 in Winnetka, CA.">
+    <meta name="twitter:title" content="Preschool in Winnetka, CA | Revital Daycare &amp; Pre-K">
+    <meta name="twitter:description" content="Warm, personalized preschool for children ages 3-5 in Winnetka, CA. Play-based learning in a nurturing home environment. Schedule a tour.">
     <meta name="twitter:image" content="https://revitaldaycare.com/images/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Revital Daycare">
     <link rel="canonical" href="https://revitaldaycare.com/">
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ChildCare",
-      "@id": "https://revitaldaycare.com/#childcare",
-      "name": "Revital Daycare",
-      "image": "https://revitaldaycare.com/images/logo.png",
-      "description": "Quality preschool and early childhood education for children ages 3-5 in Winnetka, CA. Play-based Pre-K learning, nurturing staff, and a safe environment.",
-      "url": "https://revitaldaycare.com",
-      "telephone": "+1-818-943-5983",
-      "email": "revitaldaycare@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "20628 Londelius St",
-        "addressLocality": "Winnetka",
-        "addressRegion": "CA",
-        "postalCode": "91306",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.2290264,
-        "longitude": -118.5828195
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "06:30",
-        "closes": "18:00"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Revital Edry"
-      },
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Revital Edry",
-          "jobTitle": "Teacher"
-        },
-        {
-          "@type": "Person",
-          "name": "Itamar Nadjar",
-          "jobTitle": "Assistant"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/revitaldaycare",
-        "https://www.instagram.com/revitaldaycare",
-        "https://www.yelp.com/biz/revital-daycare-winnetka"
-      ]
-    }
-    </script>
+    
+    
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation (shared header pattern) -->
+    <nav class="navbar" role="banner">
         <div class="container">
             <div class="nav-brand">
-                <a href="/" class="logo">Revital Daycare</a>
+                <a href="index.html" class="logo">Revital Daycare</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="programs">Programs</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li class="nav-dropdown">
-                    <a href="woodland-hills">Service Areas</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="woodland-hills">Woodland Hills</a></li>
-                        <li><a href="canoga-park">Canoga Park</a></li>
-                        <li><a href="chatsworth">Chatsworth</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact" class="btn-cta">Contact</a></li>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="index.html" class="active" role="menuitem">Home</a></li>
+                <li><a href="program.html" role="menuitem">Our Program</a></li>
+                <li><a href="about.html" role="menuitem">About Us</a></li>
+                <li><a href="environment.html" role="menuitem">Our Environment</a></li>
+                <li><a href="parent-reviews.html" role="menuitem">Parent Reviews</a></li>
+                <li><a href="faq.html" role="menuitem">FAQ</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" role="button" aria-label="Schedule a tour">Schedule a Tour</a>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -108,35 +67,30 @@
     <main id="main-content">
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
-            <h1>Nurturing Growth, Building Community</h1>
-            <p>Quality daycare and early childhood education in Winnetka, CA</p>
-            <a href="contact" class="btn btn-primary">Schedule a Tour</a>
+            <h1>A Warm, Personalized Preschool in Winnetka for Ages 3–5</h1>
+            <p>Small-group, play-based Pre-K learning in a nurturing home environment where every child is known and supported.</p>
+            <a href="contact.html" class="btn btn-primary" data-track="tour_cta_click">Schedule a Tour</a>
+            <a href="program.html" class="btn btn-outline">See Our Program</a>
+            <p class="hero-badge" style="margin-top:1.5rem;font-size:0.95rem;opacity:0.9;">Licensed by CA Dept. of Social Services • CDSS License #197312451 • Ages 3–5 • 6:1 Ratio</p>
         </div>
+        <picture>
+            <source srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/staff-children.jpg" srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Revital Edry working with children at Revital Daycare in Winnetka" width="1050" height="1400" loading="eager" decoding="async" class="hero-img" style="max-width:100%;height:auto;border-radius:12px;margin-top:2rem;box-shadow:0 8px 32px rgba(0,0,0,.15);">
+          </picture>
     </section>
 
-    <!-- Welcome Section -->
-    <section id="welcome" class="welcome-section">
+    <!-- Section 1: Revital Difference -->
+    <section class="why-choose" id="difference">
         <div class="container">
-            <div class="welcome-content">
-                <h2>Welcome to Revital Daycare</h2>
-                <p>Located in the heart of Winnetka, CA, Revital Daycare is a licensed home-based preschool serving families with children ages 3 through 5 years. Founded by teacher Revital Edry, our program combines the warmth of a home environment with the structure and educational focus of a professional preschool.</p>
-                <p>We believe that the preschool years are among the most formative, and we take that responsibility seriously. Our play-based, child-centered approach — inspired by Reggio Emilia principles — encourages children to explore, create, and discover at their own pace. Every activity in our daily routine is designed to support cognitive, social-emotional, physical, and language development.</p>
-                <p>With low child-to-staff ratios (a 6:1 ratio for preschoolers), your child receives the individualized attention they deserve. We partner closely with parents through daily updates and open communication to ensure consistency between home and preschool.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Families Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <h2>Why Families Choose Revital</h2>
+            <h2>More Than Childcare. A Place to Grow.</h2>
+            <p class="section-subtitle" style="max-width:720px;margin:auto;text-align:center;">At Revital, we believe young children learn best when they feel safe, loved, curious, and connected.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">👩‍👧‍👦</div>
-                    <h3>Low Ratios, Big Hearts</h3>
-                    <p>Our low preschool ratio ensures your child gets the one-on-one attention they need to thrive. No one gets lost in the crowd here.</p>
+                    <div class="feature-icon">🏠</div>
+                    <h3>Small &amp; Personal</h3>
+                    <p>A home-like environment where children receive individual attention and are truly known.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
@@ -144,61 +98,102 @@
                     <p>Inspired by Reggio Emilia, our curriculum lets children lead their own discovery through art, music, sensory play, and hands-on exploration.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Daily Updates</h3>
-                    <p>You'll never wonder how your child's day went. We send photos, activity updates, and milestone notes so you stay connected.</p>
+                    <div class="feature-icon">🌱</div>
+                    <h3>Growing Independence</h3>
+                    <p>Children explore, create, and discover at their own pace, making choices, building confidence, and solving problems.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Safe & Secure</h3>
-                    <p>Secure entry, CPR/First Aid certified staff, and regular safety drills. Your child's safety is our top priority.</p>
+                    <div class="feature-icon">📱</div>
+                    <h3>Strong Family Communication</h3>
+                    <p>You'll never wonder how your child's day went — we share photos, activity updates, and milestone notes so you stay connected.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs Preview -->
-    <section class="programs-preview">
+    <!-- Section 2: Typical Day -->
+    <section class="curriculum-section" id="typical-day" style="background:var(--cream);">
         <div class="container">
-            <h2>Our Preschool Program</h2>
-            <p class="section-subtitle">Learning and growth for children ages 3-5</p>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <h3>Preschool (Ages 3-4)</h3>
-                    <p>Kindergarten-readiness foundations</p>
-                    <ul>
-                        <li>Pre-K curriculum</li>
-                        <li>Academic readiness</li>
-                        <li>Structured learning activities</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <h3>Pre-K &amp; Kindergarten Prep (Ages 4-5)</h3>
-                    <p>Confident transition to elementary school</p>
-                    <ul>
-                        <li>Early literacy and phonics</li>
-                        <li>Math and problem-solving</li>
-                        <li>Social-emotional and self-regulation skills</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <h3>School Day &amp; Enrichment</h3>
-                    <p>Full days of learning, play, and discovery</p>
-                    <ul>
-                        <li>Art, music, and dramatic play</li>
-                        <li>Outdoor play and physical activity</li>
-                        <li>Science and nature exploration</li>
-                    </ul>
-                </div>
+            <h2>What Does a Day at Revital Look Like?</h2>
+            <p class="section-subtitle" style="max-width:720px;margin:auto;text-align:center;">Every day combines learning, play, creativity, movement, social connection, and plenty of opportunities for children to explore at their own pace.</p>
+            <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+                <div class="feature-card"><div class="feature-icon">☀️</div><h3>Morning Welcome</h3><p>A warm, predictable start that helps every child settle in and reconnect with friends.</p></div>
+                <div class="feature-card"><div class="feature-icon">📚</div><h3>Learning Through Play</h3><p>Hands-on centers that weave early literacy, math, and science into imaginative play.</p></div>
+                <div class="feature-card"><div class="feature-icon">🖌️</div><h3>Creative Exploration</h3><p>Art, music, and dramatic play where expression and creativity lead the way.</p></div>
+                <div class="feature-card"><div class="feature-icon">🌳</div><h3>Outdoor Play</h3><div class="feature-card"><div class="feature-icon">🤝</div><h3>Friendships &amp; Social Learning</h3><p>Guided sharing, turn-taking, and problem-solving that build empathy and teamwork.</p></div>
+                <div class="feature-card"><div class="feature-icon">😴</div><h3>Rest &amp; Recharge</h3><p>A calm wind-down with quiet reading or soft music to restore energy.</p></div>
             </div>
-            <a href="programs" class="btn btn-outline">Learn More About Our Preschool Program</a>
+            <p style="text-align:center;margin-top:1.5rem;font-size:.9rem;color:var(--text);">
+              Specific arrival, midday, and pickup times are shared during tours —
+              book a visit to see the full rhythm.
+            </p>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
+    <!-- Section 3: Photography Gallery -->
+    <section class="gallery-section" id="gallery">
         <div class="container">
-            <h2>What Parents Say</h2>
+            <h2>Come See Where Your Child Will Learn, Play &amp; Grow</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Real moments from our home-like classroom and outdoor space in Winnetka.</p>
+            <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+                <picture>
+            <source srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/staff-children.jpg" srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Teacher with children engaged in learning" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/preschool-classroom-400w.webp 400w, images/preschool-classroom-800w.webp 800w, images/preschool-classroom.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/preschool-classroom.jpg" srcset="images/preschool-classroom-400w.webp 400w, images/preschool-classroom-800w.webp 800w, images/preschool-classroom.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Bright preschool classroom with learning centers" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/outdoor-playground-400w.webp 400w, images/outdoor-playground-800w.webp 800w, images/outdoor-playground.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/outdoor-playground.jpg" srcset="images/outdoor-playground-400w.webp 400w, images/outdoor-playground-800w.webp 800w, images/outdoor-playground.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Children playing on the outdoor playground" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/art-space-400w.webp 400w, images/art-space-800w.webp 800w, images/art-space.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/art-space.jpg" srcset="images/art-space-400w.webp 400w, images/art-space-800w.webp 800w, images/art-space.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Children creating art at the easel" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/reading-corner-400w.webp 400w, images/reading-corner.webp 787w" sizes="(max-width: 600px) 400px, 787px" type="image/webp">
+            <img src="images/reading-corner.jpg" srcset="images/reading-corner-400w.webp 400w, images/reading-corner.webp 787w" sizes="(max-width: 600px) 400px, 787px" alt="Cozy reading corner with cushions and books" width="787" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/children-playing-400w.webp 400w, images/children-playing-800w.webp 800w, images/children-playing.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/children-playing.jpg" srcset="images/children-playing-400w.webp 400w, images/children-playing-800w.webp 800w, images/children-playing.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Children playing together indoors" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/story-time-400w.webp 400w, images/story-time-800w.webp 800w, images/story-time.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/story-time.jpg" srcset="images/story-time-400w.webp 400w, images/story-time-800w.webp 800w, images/story-time.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Group story time on the rug" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+                <picture>
+            <source srcset="images/nature-exploration-400w.webp 400w, images/nature-exploration-800w.webp 800w, images/nature-exploration.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
+            <img src="images/nature-exploration.jpg" srcset="images/nature-exploration-400w.webp 400w, images/nature-exploration-800w.webp 800w, images/nature-exploration.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Children exploring nature outdoors" width="1050" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+          </picture>
+            </div>
+            <p style="text-align:center;margin-top:1.5rem;"><a href="environment.html" class="btn btn-primary">Take a Look Inside</a></p>
+        </div>
+    </section>
+
+    <!-- Section 4: Why Families Choose Revital -->
+    <section class="why-choose" id="why-choose" style="background:var(--light-gray);">
+        <div class="container">
+            <h2>Why Families Choose Revital</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Choosing childcare is a big decision. You want a place where your child is safe, cared for, learning, and genuinely happy to be there.</p>
+            <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+                <div class="feature-card"><div class="feature-icon">✓</div><h3>Licensed Family Childcare</h3><p>Regularly inspected and fully licensed by the CA Department of Social Services (License #197312451).</p></div>
+                <div class="feature-card"><div class="feature-icon">👥</div><h3>Small-Group Environment</h3><p>Our low 6:1 child-to-staff ratio ensures every child gets personalized attention.</p></div>
+                <div class="feature-card"><div class="feature-icon">🎨</div><h3>Play-Based Learning</h3><p>A curriculum inspired by Reggio Emilia that grows curiosity, creativity, and confidence.</p></div>
+                <div class="feature-card"><div class="feature-icon">👶</div><h3>Ages 3–5</h3><p>Developmentally matched activities for preschoolers and pre-K children.</p></div>
+                <div class="feature-card"><div class="feature-icon">📲</div><h3>Daily Parent Communication</h3><p>Photos, updates, and milestone notes keep you connected to your child's day.</p></div>
+                <div class="feature-card"><div class="feature-icon">❤️</div><h3>Social-Emotional Development</h3><p>Structured opportunities to share, take turns, and build lasting friendships.</p></div>
+                <div class="feature-card"><div class="feature-icon">🔒</div><h3>Safe, Nurturing Environment</h3><p>Secure entry, CPR/First Aid-certified staff, and regular safety routines.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Reviews -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <h2>Loved by Families</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <p class="stars">★★★★★</p>
@@ -216,15 +211,123 @@
                     <p class="author">- Jennifer Lopez, Canoga Park &middot; February 2026</p>
                 </div>
             </div>
+            <p style="text-align:center;margin-top:1.5rem;"><a href="parent-reviews.html" class="btn btn-outline">Read More Parent Reviews</a></p>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Section 6: Programs -->
+    <section class="programs-preview" id="programs">
         <div class="container">
-            <h2>Ready to Join the Revital Family?</h2>
-            <p>Contact us today to schedule a tour and learn more about our programs.</p>
-            <a href="contact" class="btn btn-light">Get in Touch</a>
+            <h2>Learning Designed for the Early Years</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Our program is designed to meet children where they are and help them take their next steps with confidence.</p>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Preschool (Ages 3-4)</h3>
+                    <p>Kindergarten-readiness foundations built through hands-on learning and play.</p>
+                    <ul>
+                        <li>Pre-K curriculum</li>
+                        <li>Academic readiness</li>
+                        <li>Structured learning activities</li>
+                    </ul>
+                    <a href="program.html#preschool" class="btn btn-primary">Explore Preschool</a>
+                </div>
+                <div class="program-card">
+                    <h3>Pre-K &amp; Kindergarten Prep (Ages 4-5)</h3>
+                    <p>Confident transition to elementary school through early literacy and problem-solving.</p>
+                    <ul>
+                        <li>Early literacy and phonics</li>
+                        <li>Math and problem-solving</li>
+                        <li>Social-emotional and self-regulation skills</li>
+                    </ul>
+                    <a href="program.html#prek" class="btn btn-primary">Explore Pre-K</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: About Founder -->
+    <section class="team-section" id="about-founder" style="background:var(--light-gray);">
+        <div class="container">
+            <h2>Meet the People Behind Revital</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Revital was created with a simple belief: children thrive when surrounded by caring adults who truly know them.</p>
+            <div class="team-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;justify-items:center;">
+                <div class="team-member" style="text-align:center;">
+                    <img src="images/team-revital-400w.webp" srcset="images/team-revital-400w.webp 400w, images/team-revital-800w.webp 800w, images/team-revital.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Revital Edry, founder and teacher" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
+                    <h3>Revital Edry</h3>
+                    <p>Teacher &amp; Founder</p>
+                    <p>Revital is a dedicated early childhood educator with 10 years of experience working with preschool-aged children.</p>
+                </div>
+                <div class="team-member" style="text-align:center;">
+                    <img src="images/team-itamar-400w.webp" srcset="images/team-itamar-400w.webp 400w, images/team-itamar-800w.webp 800w, images/team-itamar.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Itamar Nadjar, assistant teacher" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
+                    <h3>Itamar Nadjar</h3>
+                    <p>Assistant</p>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:1.5rem;"><a href="about.html" class="btn btn-primary">Learn About Revital</a></p>
+        </div>
+    </section>
+
+    <!-- Section 8: FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Questions We Hear</h2>
+            <div class="faq-grid" style="max-width:760px;margin:auto;">
+                <div class="faq-item">
+                    <details>
+                        <summary>What ages does Revital serve?</summary>
+                        <p>We serve children ages 3 through 5 years in our preschool and Pre-K programs.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Where is Revital Daycare located?</summary>
+                        <p>20628 Londelius St, Winnetka, CA 91306. Conveniently serving families in Winnetka, Woodland Hills, and Canoga Park.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What are your hours?</summary>
+                        <p>Monday through Friday, 6:30 AM to 6:00 PM. We're closed on weekends and major holidays.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What is your child-to-staff ratio?</summary>
+                        <p>We maintain a low 6:1 child-to-staff ratio across our preschool programs.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>How do I schedule a tour?</summary>
+                        <p>Contact us by phone, email, or the form on our Contact page. Tours are free and available throughout the week.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Is Revital licensed?</summary>
+                        <p>Yes — we are licensed by the CA Department of Social Services (CDSS License #197312451).</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Final CTA -->
+    <section class="cta-section" style="background:var(--primary);">
+        <div class="container">
+            <h2 style="color:var(--cream);">Come Meet Us</h2>
+            <p style="color:var(--cream);">The best way to know whether Revital is the right fit is to come see it for yourself. Take a tour, meet us, and ask every question you have.</p>
+            <a href="contact.html" class="btn btn-light" data-track="tour_cta_click">Schedule a Tour</a>
+            <a href="contact.html" class="btn btn-outline" style="margin-left:10px;color:var(--cream);border-color:var(--cream);">Contact Revital</a>
+        </div>
+    </section>
+
+    <!-- Review CTA (preserved from existing content) -->
+    <section class="review-section" style="background:var(--secondary);padding:2rem 0;text-align:center;">
+        <div class="container">
+            <h2 style="color:#fff;margin-bottom:0.5rem;">Love Revital Daycare?</h2>
+            <p style="color:#fff;margin-bottom:1rem;">Share your experience and help other families find us!</p>
+            <a href="https://www.google.com/maps/place/Revital+Daycare/@34.2290264,-118.5828195,17z/" target="_blank" rel="noopener" class="btn btn-light">⭐ Leave a Google Review</a>
         </div>
     </section>
 
@@ -247,13 +350,31 @@
                     <h3>Hours</h3>
                     <p>Monday - Friday<br>6:30 AM - 6:00 PM</p>
                 </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="program.html">Our Program</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="environment.html">Our Environment</a><br>
+                    <a href="parent-reviews.html">Parent Reviews</a><br>
+                    <a href="faq.html">FAQ</a><br>
+                    <a href="contact.html">Contact</a></p>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy">Privacy Policy</a></p>
+                <p>&copy; 2026 Revital Daycare. All rights reserved. | Licensed by CA Dept. of Social Services (CDSS License #197312451) | <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+        <script src="schemas.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
 </body>
 </html>
