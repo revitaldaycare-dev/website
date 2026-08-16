@@ -4,8 +4,8 @@ Last-Modified: 2026-08-14
 
 ## About
 - [About Us](https://revitaldaycare.com/about.html): Our story, mission, team, and facility in Winnetka, CA
-- [Programs](https://revitaldaycare.com/programs.html): Preschool (3-4) and Pre-K (4-5) program details
-- [Gallery](https://revitaldaycare.com/gallery.html): Photos of our classrooms, activities, and special moments
+- [Programs](https://revitaldaycare.com/program.html): Preschool (3-4) and Pre-K (4-5) program details
+- [Environment](https://revitaldaycare.com/environment.html): Photos of our classrooms, activities, and special moments
 - [Contact](https://revitaldaycare.com/contact.html): Schedule a tour, FAQ, and contact information
 
 ## Key Facts
