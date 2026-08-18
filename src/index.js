@@ -83,6 +83,7 @@ export default {
     headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
     headers.set("X-Frame-Options", "DENY");
     headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+    headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:;");
 
     if (/\.(webp|jpg|jpeg|png|gif|svg|ico)$/i.test(url.pathname)) {
       headers.set("Cache-Control", "public, max-age=31536000, immutable");

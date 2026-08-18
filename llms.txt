@@ -1,12 +1,22 @@
 # Revital Daycare
-Last-Modified: 2026-08-14
+Last-Modified: 2026-08-17
 > Quality preschool and early childhood education in Winnetka, CA. Serving children ages 3-5 with play-based, nurturing care and kindergarten readiness.
 
 ## About
+- [Home](https://revitaldaycare.com/): Preschool in Winnetka for ages 3-5 with play-based learning and a nurturing environment
 - [About Us](https://revitaldaycare.com/about.html): Our story, mission, team, and facility in Winnetka, CA
 - [Programs](https://revitaldaycare.com/program.html): Preschool (3-4) and Pre-K (4-5) program details
-- [Environment](https://revitaldaycare.com/environment.html): Photos of our classrooms, activities, and special moments
-- [Contact](https://revitaldaycare.com/contact.html): Schedule a tour, FAQ, and contact information
+- [Our Environment](https://revitaldaycare.com/environment.html): Explore our classrooms, art space, outdoor playground, and learning areas
+- [Photo Gallery](https://revitaldaycare.com/gallery.html): Browse photos of classrooms, activities, and special moments
+- [Parent Reviews](https://revitaldaycare.com/parent-reviews.html): What parents are saying about Revital Daycare
+- [FAQ](https://revitaldaycare.com/faq.html): Answers to common questions about hours, enrollment, ratio, and curriculum
+- [Contact](https://revitaldaycare.com/contact.html): Schedule a tour, get in touch, or ask about enrollment
+
+## Local Pages
+- [Winnetka](https://revitaldaycare.com/about.html): Preschool and childcare services in Winnetka, CA (see About page)
+- [Woodland Hills](https://revitaldaycare.com/woodland-hills.html): Daycare and pre-K serving Woodland Hills families
+- [Canoga Park](https://revitaldaycare.com/canoga-park.html): Nurturing preschool options in Canoga Park, CA
+- [Chatsworth](https://revitaldaycare.com/chatsworth.html): Quality childcare for Chatsworth families
 
 ## Key Facts
 - Location: 20628 Londelius St, Winnetka, CA 91306
@@ -14,11 +24,13 @@ Last-Modified: 2026-08-14
 - Email: revitaldaycare@gmail.com
 - Hours: Monday-Friday, 6:30 AM - 6:00 PM
 - Founded by Revital Edry
-- Ages served: 3 through 5 years (preschool and Pre-K)
-- Teacher: Revital Edry
+- Teacher: Revital Edry (10 years experience)
 - Assistant: Itamar Nadjar
+- Ages served: 3 through 5 years (preschool and Pre-K)
 - Child-to-staff ratio: 6:1
 - Full-time and part-time enrollment available
 - Play-based, child-centered approach inspired by Reggio Emilia principles
-- Licensed by California Department of Social Services
+- Licensed by California Department of Social Services (CDSS License #197312451)
 - All staff CPR/First Aid certified and background-checked
+- Daily parent communication via photo and message updates
+- Serves Winnetka, Woodland Hills, Canoga Park, and Chatsworth communities

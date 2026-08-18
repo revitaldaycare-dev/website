@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://images.revitaldaycare.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google.com">
     <link rel="dns-prefetch" href="https://cloudflareinsights.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     
     <!-- Preload critical resources -->
     <link rel="preload" href="/styles.css" as="style">
@@ -38,7 +40,65 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Revital Daycare">
     <link rel="canonical" href="https://revitaldaycare.com/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ChildCare",
+      "@id": "https://revitaldaycare.com/#childcare",
+      "name": "Revital Daycare",
+      "alternateName": "Revital Preschool",
+      "url": "https://revitaldaycare.com",
+      "logo": "https://revitaldaycare.com/images/og-image.png",
+      "image": "https://revitaldaycare.com/images/og-image.png",
+      "telephone": "+1-818-943-5983",
+      "email": "revitaldaycare@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "20628 Londelius St",
+        "addressLocality": "Winnetka",
+        "addressRegion": "CA",
+        "postalCode": "91306",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.2290264,
+        "longitude": -118.5828195
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "06:30",
+        "closes": "18:00"
+      },
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "6",
+        "bestRating": "5"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Revital Edry"
+      },
+      "employee": [
+        {"@type": "Person", "name": "Revital Edry", "jobTitle": "Teacher & Founder"},
+        {"@type": "Person", "name": "Itamar Nadjar", "jobTitle": "Assistant"}
+      ],
+      "sameAs": [
+        "https://www.google.com/maps/place/Revital+Daycare/@34.2290264,-118.5828195,17z/"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Winnetka"},
+        {"@type": "City", "name": "Canoga Park"},
+        {"@type": "City", "name": "Woodland Hills"},
+        {"@type": "City", "name": "Chatsworth"}
+      ]
+    }
+    </script>
     
     
 </head>
@@ -77,35 +137,44 @@
         </div>
         <picture>
             <source srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" type="image/webp">
-            <img src="images/staff-children.jpg" srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Revital Edry working with children at Revital Daycare in Winnetka" width="1050" height="1400" loading="eager" decoding="async" class="hero-img" style="max-width:100%;height:auto;border-radius:12px;margin-top:2rem;box-shadow:0 8px 32px rgba(0,0,0,.15);">
+            <img src="images/staff-children.jpg" srcset="images/staff-children-400w.webp 400w, images/staff-children-800w.webp 800w, images/staff-children.webp 1050w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1050px" alt="Revital Edry working with children at Revital Daycare in Winnetka" width="1050" height="1400" loading="eager" fetchpriority="high" decoding="async" class="hero-img" style="max-width:100%;height:auto;border-radius:12px;margin-top:2rem;box-shadow:0 8px 32px rgba(0,0,0,.15);">
           </picture>
+    </section>
+
+    <!-- About Intro -->
+    <section class="why-choose" id="about-intro" style="background:var(--cream);">
+        <div class="container" style="max-width:800px;margin:auto;text-align:center;">
+            <h2>Welcome to Revital Daycare</h2>
+            <p>Revital Daycare is a family-owned preschool nestled in the heart of Winnetka, California. Founded by Revital Edry, a passionate early childhood educator with over ten years of experience, our center was created with a simple but powerful belief: children thrive when they are surrounded by caring adults who truly know them. We are licensed by the California Department of Social Services (CDSS License #197312451) and serve families from Winnetka, Woodland Hills, Canoga Park, and Chatsworth.</p>
+            <p>Unlike large chain daycares, Revital offers an intimate, home-like setting where your child is not just another face in the crowd. Our small size means we can focus on each child's unique interests, learning style, and developmental needs. Parents consistently tell us that their children are excited to come to school each morning — and that's the best compliment we could ask for. If you are looking for a preschool that balances structured learning with joyful play, we invite you to schedule a tour and see Revital for yourself.</p>
+        </div>
     </section>
 
     <!-- Section 1: Revital Difference -->
     <section class="why-choose" id="difference">
         <div class="container">
             <h2>More Than Childcare. A Place to Grow.</h2>
-            <p class="section-subtitle" style="max-width:720px;margin:auto;text-align:center;">At Revital, we believe young children learn best when they feel safe, loved, curious, and connected.</p>
+            <p class="section-subtitle" style="max-width:720px;margin:auto;text-align:center;">At Revital, we believe young children learn best when they feel safe, loved, curious, and connected. Our approach combines structured early learning with the freedom to explore, creating an environment where children develop confidence, independence, and a genuine love of learning that carries them into kindergarten and beyond.</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🏠</div>
                     <h3>Small &amp; Personal</h3>
-                    <p>A home-like environment where children receive individual attention and are truly known.</p>
+                    <p>A home-like environment where children receive individual attention and are truly known. Our small group size means teachers can tailor activities to each child's interests and developmental stage, fostering deeper engagement and faster growth.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
                     <h3>Play-Based Learning</h3>
-                    <p>Inspired by Reggio Emilia, our curriculum lets children lead their own discovery through art, music, sensory play, and hands-on exploration.</p>
+                    <p>Inspired by Reggio Emilia, our curriculum lets children lead their own discovery through art, music, sensory play, and hands-on exploration. Children develop early literacy, numeracy, and problem-solving skills naturally through play-based activities designed to spark curiosity.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌱</div>
                     <h3>Growing Independence</h3>
-                    <p>Children explore, create, and discover at their own pace, making choices, building confidence, and solving problems.</p>
+                    <p>Children explore, create, and discover at their own pace, making choices, building confidence, and solving problems. Our nurturing environment encourages children to take healthy risks, try new things, and develop the independence they will need in elementary school.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
                     <h3>Strong Family Communication</h3>
-                    <p>You'll never wonder how your child's day went — we share photos, activity updates, and milestone notes so you stay connected.</p>
+                    <p>You will never wonder how your child's day went — we share photos, activity updates, and milestone notes through our parent communication app so you stay connected even during a busy workday. Many parents tell us these updates are the highlight of their afternoon.</p>
                 </div>
             </div>
         </div>
@@ -312,7 +381,37 @@
         </div>
     </section>
 
-    <!-- Section 9: Final CTA -->
+    <!-- Section 9: Service Areas -->
+    <section class="service-areas" style="background:var(--light-gray);padding:3rem 0;">
+        <div class="container">
+            <h2 style="text-align:center;">Serving Families Across the West Valley</h2>
+            <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Revital Daycare is conveniently located in Winnetka, just minutes from the Ventura (101) Freeway. We welcome families from throughout the West San Fernando Valley.</p>
+            <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:1.5rem;">
+                <div class="feature-card" style="text-align:center;">
+                    <h3>Winnetka</h3>
+                    <p>Our home base. A nurturing preschool right in your neighborhood on Londelius Street.</p>
+                    <a href="about.html" class="btn btn-primary" style="margin-top:0.5rem;">About Our Location</a>
+                </div>
+                <div class="feature-card" style="text-align:center;">
+                    <h3>Woodland Hills</h3>
+                    <p>Quality early education just minutes from Warner Center and The Village.</p>
+                    <a href="woodland-hills.html" class="btn btn-primary" style="margin-top:0.5rem;">Preschool for Woodland Hills</a>
+                </div>
+                <div class="feature-card" style="text-align:center;">
+                    <h3>Canoga Park</h3>
+                    <p>Nurturing preschool options conveniently located near Topanga Canyon Blvd.</p>
+                    <a href="canoga-park.html" class="btn btn-primary" style="margin-top:0.5rem;">Preschool for Canoga Park</a>
+                </div>
+                <div class="feature-card" style="text-align:center;">
+                    <h3>Chatsworth</h3>
+                    <p>Quality childcare for families near the Devonshire and Plummer corridors.</p>
+                    <a href="chatsworth.html" class="btn btn-primary" style="margin-top:0.5rem;">Preschool for Chatsworth</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Final CTA -->
     <section class="cta-section" style="background:var(--primary);">
         <div class="container">
             <h2 style="color:var(--cream);">Come Meet Us</h2>
@@ -358,6 +457,12 @@
                     <a href="parent-reviews.html">Parent Reviews</a><br>
                     <a href="faq.html">FAQ</a><br>
                     <a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p><a href="woodland-hills.html">Woodland Hills</a><br>
+                    <a href="canoga-park.html">Canoga Park</a><br>
+                    <a href="chatsworth.html">Chatsworth</a></p>
                 </div>
             </div>
             <div class="footer-bottom">

@@ -40,6 +40,25 @@
       "reviewCount": "6",
       "bestRating": "5"
     },
+    "founder": {
+      "@type": "Person",
+      "name": "Revital Edry"
+    },
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Revital Edry",
+        "jobTitle": "Teacher & Founder"
+      },
+      {
+        "@type": "Person",
+        "name": "Itamar Nadjar",
+        "jobTitle": "Assistant"
+      }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps/place/Revital+Daycare/@34.2290264,-118.5828195,17z/"
+    ],
     "areaServed": [
       {"@type":"City","name":"Winnetka"},
       {"@type":"City","name":"Canoga Park"},
