@@ -1,6 +1,20 @@
 # Revital Daycare
-Last-Modified: 2026-08-17
+Last-Modified: 2026-08-30
 > Quality preschool and early childhood education in Winnetka, CA. Serving children ages 3-5 with play-based, nurturing care and kindergarten readiness.
+
+## Brand
+- Name: Revital Daycare
+- Tagline: Nurturing preschool for ages 3-5 in Winnetka, CA
+- Philosophy: Play-based, child-centered approach inspired by Reggio Emilia principles
+- Founded by: Revital Edry (10 years early childhood education experience)
+- License: California Department of Social Services (CDSS License #197312451)
+
+## Service Areas
+- Winnetka, CA (home location)
+- Woodland Hills, CA
+- Canoga Park, CA
+- Chatsworth, CA
+- West San Fernando Valley
 
 ## About
 - [Home](https://revitaldaycare.com/): Preschool in Winnetka for ages 3-5 with play-based learning and a nurturing environment

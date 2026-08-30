@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://revitaldaycare.com/</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-30</lastmod>
     </url>
     <url>
         <loc>https://revitaldaycare.com/program.html</loc>
@@ -10,7 +10,7 @@
     </url>
     <url>
         <loc>https://revitaldaycare.com/about.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-30</lastmod>
     </url>
     <url>
         <loc>https://revitaldaycare.com/environment.html</loc>
@@ -18,7 +18,7 @@
     </url>
     <url>
         <loc>https://revitaldaycare.com/parent-reviews.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-30</lastmod>
     </url>
     <url>
         <loc>https://revitaldaycare.com/faq.html</loc>
@@ -26,7 +26,7 @@
     </url>
     <url>
         <loc>https://revitaldaycare.com/gallery.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-08-30</lastmod>
     </url>
     <url>
         <loc>https://revitaldaycare.com/contact.html</loc>
@@ -47,5 +47,21 @@
     <url>
         <loc>https://revitaldaycare.com/privacy.html</loc>
         <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/curriculum.html</loc>
+        <lastmod>2026-08-23</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/safety.html</loc>
+        <lastmod>2026-08-23</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/blog.html</loc>
+        <lastmod>2026-08-30</lastmod>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/winnetka.html</loc>
+        <lastmod>2026-08-23</lastmod>
     </url>
 </urlset>
