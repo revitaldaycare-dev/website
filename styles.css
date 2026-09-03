@@ -1150,7 +1150,7 @@ section {
 }
 
 .site-footer .footer-bottom a {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .site-footer .footer-bottom a:hover {
