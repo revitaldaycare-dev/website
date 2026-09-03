@@ -1133,15 +1133,63 @@ section {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #555;
-    color: #666;
+    color: #aaa;
 }
 
 .footer-bottom a {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .footer-bottom a:hover {
+    color: white;
+}
+
+/* Team/Blog pages use .site-footer with light background */
+.site-footer .footer-bottom {
+    color: #666;
+}
+
+.site-footer .footer-bottom a {
+    color: var(--primary);
+}
+
+.site-footer .footer-bottom a:hover {
     color: #1a5c8a;
+}
+
+.site-footer {
+    background-color: var(--dark-gray);
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.site-footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.site-footer h3 {
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.site-footer p,
+.site-footer li {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.site-footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: white;
 }
 
 /* ===== PRIVACY POLICY ===== */
