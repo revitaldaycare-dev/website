@@ -12,6 +12,7 @@
     
     <!-- Preload critical resources -->
     <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="/script.js" as="script">
     <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
     <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
@@ -40,7 +41,6 @@
     <meta property="og:site_name" content="Revital Daycare">
     <link rel="canonical" href="https://revitaldaycare.com/chatsworth.html">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,6 +71,16 @@
         "opens": "06:30",
         "closes": "18:00"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://revitaldaycare.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Chatsworth", "item": "https://revitaldaycare.com/chatsworth.html"}
+      ]
     }
     </script>
 </head>

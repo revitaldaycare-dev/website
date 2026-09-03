@@ -11,3 +11,6 @@ node_modules/
 # Private local working folders - never deploy or commit
 drive-download-20260809T173317Z-1-001/
 science\ /
+
+# Lighthouse audit cache
+.unlighthouse/

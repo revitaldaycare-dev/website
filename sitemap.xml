@@ -2,66 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://revitaldaycare.com/</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/program.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/about.html</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/environment.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/parent-reviews.html</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/faq.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/gallery.html</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/contact.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/woodland-hills.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/chatsworth.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/canoga-park.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/privacy.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/curriculum.html</loc>
-        <lastmod>2026-08-23</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/safety.html</loc>
-        <lastmod>2026-08-23</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/blog.html</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://revitaldaycare.com/winnetka.html</loc>
-        <lastmod>2026-08-23</lastmod>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/blog/choosing-preschool-winnetka.html</loc>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/blog/prek-kindergarten-readiness.html</loc>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/team/revital-edry.html</loc>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://revitaldaycare.com/team/itamar-nadjar.html</loc>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>

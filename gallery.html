@@ -12,6 +12,7 @@
     
     <!-- Preload critical resources -->
     <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="/script.js" as="script">
     <link rel="preload" href="/images/staff-children.webp" as="image" type="image/webp">
     <link rel="preload" href="/images/og-image.webp" as="image" type="image/webp">
@@ -40,14 +41,40 @@
     <meta property="og:site_name" content="Revital Daycare">
     <link rel="canonical" href="https://revitaldaycare.com/gallery.html">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Revital Daycare Photo Gallery",
-      "description": "Photos of classrooms, activities, and special moments at Revital Daycare in Winnetka, CA",
-      "url": "https://revitaldaycare.com/gallery.html"
+      "@type": "ChildCare",
+      "@id": "https://revitaldaycare.com/#childcare",
+      "name": "Revital Daycare",
+      "url": "https://revitaldaycare.com",
+      "telephone": "+1-818-943-5983",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "20628 Londelius St",
+        "addressLocality": "Winnetka",
+        "addressRegion": "CA",
+        "postalCode": "91306",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.2282,
+        "longitude": -118.5789
+      },
+      "description": "Photo gallery of Revital Daycare classrooms, activities, and special moments in Winnetka, CA",
+      "priceRange": "$$",
+      "image": "https://revitaldaycare.com/images/og-image.png"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://revitaldaycare.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Photo Gallery", "item": "https://revitaldaycare.com/gallery.html"}
+      ]
     }
     </script>    
 </head>
