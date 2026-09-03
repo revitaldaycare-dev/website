@@ -139,7 +139,7 @@ a:hover {
     .btn-call {
         display: inline-block;
         margin-top: 1.25rem;
-        background-color: #2d9cd3;
+        background-color: #1a7cb5;
         color: #fff;
         font-size: 1.15rem;
         font-weight: 700;
@@ -148,7 +148,7 @@ a:hover {
         text-decoration: none;
         box-shadow: 0 4px 14px rgba(45, 156, 211, 0.4);
     }
-    .btn-call:hover { background-color: #2390bd; }
+    .btn-call:hover { background-color: #156a9c; }
     @media (max-width: 768px) {
         .btn-call { display: block; text-align: center; font-size: 1.3rem; }
     }
