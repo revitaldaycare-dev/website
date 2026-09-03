@@ -35,3 +35,4 @@ images/toddler-play-800w.webp
 
 # Lighthouse audit cache
 .unlighthouse/
+.lighthouse/
