@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "revitaldaycare",
+  "account_id": "c4ab2ffbbb5184a6c3c801526b99ba58",
   "main": "./src/index.js",
   "compatibility_date": "2026-08-14",
   "assets": {
