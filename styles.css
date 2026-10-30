@@ -266,6 +266,14 @@ a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.hamburger:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
 }
 
 .hamburger span {
