@@ -1,0 +1,17 @@
+{
+  "name": "learning-in-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A warm, static showcase site for a hands-on early childhood program.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npx --yes serve public",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.156.0"
+  }
+}
