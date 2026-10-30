@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const phone = (document.getElementById('contactPhone') || {}).value || '';
             const program = (document.getElementById('contactProgram') || {}).value || '';
             const message = (document.getElementById('contactMessage') || {}).value || '';
+            const consent = (document.getElementById('consentCheckbox') || {}).checked || false;
 
             const formData = new FormData();
             formData.append('name', name);
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('phone', phone);
             formData.append('program', program);
             formData.append('message', message);
+            formData.append('consent', consent ? 'true' : 'false');
 
             if (contactFormStatus) {
                 contactFormStatus.textContent = 'Sending your message…';
