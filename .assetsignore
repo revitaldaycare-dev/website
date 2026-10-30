@@ -1,6 +1,7 @@
 # Local tooling / plans - never publish
 .omo/
 .codegraph/
+.cloudflare/
 .wrangler/
 .git/
 node_modules/
@@ -16,6 +17,7 @@ wrangler.jsonc
 .gitignore
 .gitattributes
 .pagesignore
+legacy/
 images/.gitkeep
 src/
 
