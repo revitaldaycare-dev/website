@@ -34,12 +34,6 @@
       "closes": "18:00"
     },
     "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "6",
-      "bestRating": "5"
-    },
     "founder": {
       "@type": "Person",
       "name": "Revital Edry"
@@ -134,15 +128,7 @@
       "@context": "https://schema.org",
       "@graph": [
         {"@type":"WebPage","@id":BASE+"/parent-reviews#webpage","name":"Parent Reviews | Revital Daycare","description":"See what parents are saying about Revital Daycare in Winnetka, CA.","url":BASE+"/parent-reviews.html"},
-        childcare,
-        {"@type":"ItemList","itemListElement":[
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"Sarah Mitchell"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Revital has been wonderful for our daughter. The staff is caring and attentive, and we love seeing how much she's grown!"},
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"David Kim"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"My son looks forward to coming to daycare every day. The activities are creative and the communication with parents is excellent."},
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"Jennifer Lopez"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Professional, clean facility with staff who genuinely care about the children. Highly recommended to any family in Winnetka!"},
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"Maria Santos"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Revital truly cares about each child as an individual. My daughter's confidence has blossomed here."},
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"Robert Chen"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"The communication is fantastic — daily photos and updates through their app make us feel connected to our son's day."},
-          {"@type":"Review","itemReviewed":{"@id":BASE+"/#childcare"},"author":{"@type":"Person","name":"Amanda Rodriguez"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Our son went from shy to confident in just a few months. The teachers are patient and kind."}
-        ]}
+        childcare
       ]
     });
   }
