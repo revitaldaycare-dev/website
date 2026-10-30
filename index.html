@@ -94,23 +94,23 @@
 </head>
 <body>
     <!-- Navigation (shared header pattern) -->
-    <nav class="navbar" role="banner">
+    <nav class="navbar" aria-label="Primary">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html" class="logo">Revital Daycare</a>
             </div>
-            <ul class="nav-menu" role="menubar">
-                <li><a href="index.html" class="active" role="menuitem">Home</a></li>
-                <li><a href="program.html" role="menuitem">Our Program</a></li>
-                <li><a href="about.html" role="menuitem">About Us</a></li>
-                <li><a href="environment.html" role="menuitem">Our Environment</a></li>
-                <li><a href="parent-reviews.html" role="menuitem">Parent Reviews</a></li>
-                <li><a href="faq.html" role="menuitem">FAQ</a></li>
+            <ul id="primary-nav" class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="program.html">Our Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="environment.html">Our Environment</a></li>
+                <li><a href="parent-reviews.html">Parent Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
-            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" role="button" aria-label="Schedule a tour">Schedule a Tour</a>
-            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false">
+            <a href="contact.html" class="btn-cta nav-cta-persistent" data-track="tour_cta_click" aria-label="Schedule a tour">Schedule a Tour</a>
+            <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
                 <span></span><span></span><span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -312,13 +312,13 @@
             <p class="section-subtitle" style="max-width:680px;margin:auto;text-align:center;">Revital was created with a simple belief: children thrive when surrounded by caring adults who truly know them.</p>
             <div class="team-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;justify-items:center;">
                 <div class="team-member" style="text-align:center;">
-                    <img src="images/team-revital-400w.webp" srcset="images/team-revital-400w.webp 400w, images/team-revital-800w.webp 800w, images/team-revital.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Revital Edry, founder and teacher" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
+                    <img src="images/team-revital-400w.webp" srcset="images/team-revital-400w.webp 400w, images/team-revital-800w.webp 800w, images/team-revital.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Revital Edry, founder and teacher" width="140" height="140" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
                     <h3>Revital Edry</h3>
                     <p>Teacher &amp; Founder</p>
                     <p>Revital is a dedicated early childhood educator with 10 years of experience working with preschool-aged children.</p>
                 </div>
                 <div class="team-member" style="text-align:center;">
-                    <img src="images/team-itamar-400w.webp" srcset="images/team-itamar-400w.webp 400w, images/team-itamar-800w.webp 800w, images/team-itamar.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Itamar Nadjar, assistant teacher" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
+                    <img src="images/team-itamar-400w.webp" srcset="images/team-itamar-400w.webp 400w, images/team-itamar-800w.webp 800w, images/team-itamar.webp 1050w" sizes="(max-width: 600px) 140px, (max-width: 1000px) 140px, 140px" alt="Itamar Nadjar, assistant teacher" width="140" height="140" loading="lazy" decoding="async" style="width:140px;height:140px;border-radius:50%;object-fit:cover;">
                     <h3>Itamar Nadjar</h3>
                     <p>Assistant</p>
                 </div>

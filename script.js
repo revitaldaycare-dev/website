@@ -5,32 +5,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
-    if (hamburger) {
+    if (hamburger && navMenu) {
+        function setMenuOpen(isOpen) {
+            navMenu.classList.toggle('active', isOpen);
+            hamburger.classList.toggle('active', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        }
+
         hamburger.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
+            setMenuOpen(!navMenu.classList.contains('active'));
         });
 
         // Close menu when a link is clicked
         const navLinks = navMenu.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
+                setMenuOpen(false);
             });
         });
-    }
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (navMenu && hamburger) {
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
             const isClickInside = navMenu.contains(event.target) || hamburger.contains(event.target);
             if (!isClickInside && navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
+                setMenuOpen(false);
             }
-        }
-    });
+        });
+    }
 
     const contactForm = document.getElementById('contactForm');
     const contactFormStatus = document.getElementById('contactFormStatus');
