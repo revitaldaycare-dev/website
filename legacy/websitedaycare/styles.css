@@ -1,0 +1,135 @@
+/* ===== REVITAL DAYCARE - MAIN STYLESHEET ===== */
+
+:root {
+    --primary: #2874A6;
+    --secondary: #F4A66D;
+    --accent: #F9D971;
+    --cream: #FFFBF0;
+    --light-gray: #F5F5F5;
+    --dark-gray: #333;
+    --text: #444;
+    --border: #E0E0E0;
+    --success: #6BBB7A;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #fff;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+h1, h2, h3 { color: var(--dark-gray); line-height: 1.3; }
+h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+.btn-light {
+    background-color: white;
+    color: var(--primary);
+    border: 2px solid white;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+.nav-menu a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-menu .btn-cta {
+    background-color: var(--accent);
+    color: var(--dark-gray);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero-content h1 { color: white; }
+.hero-content p { font-size: 1.3rem; }
+
+.features { background-color: var(--light-gray); }
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.feature-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 3rem 0;
+}
+.program-card {
+    background: linear-gradient(135deg, var(--cream) 0%, white 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary);
+}
+
+.testimonials {
+    background-color: var(--cream);
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
