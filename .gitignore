@@ -7,6 +7,8 @@
 
 # Local build tooling (not part of the site)
 node_modules/
+.wrangler/
+.cloudflare/
 
 # Private local working folders - never deploy or commit
 drive-download-20260809T173317Z-1-001/

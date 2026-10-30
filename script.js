@@ -114,6 +114,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').catch(function(error) {
+            console.error('Service worker registration failed:', error);
+        });
+    });
+}
+
 // Lazy loading images (deferred until idle)
 if ('IntersectionObserver' in window) {
     var requestIdleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };

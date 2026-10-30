@@ -1,4 +1,4 @@
-const CACHE_NAME = 'revital-daycare-v1';
+const CACHE_NAME = 'revital-daycare-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -15,7 +15,12 @@ const STATIC_ASSETS = [
   '/images/story-time.webp',
   '/images/nature-exploration.webp',
   '/images/team-revital.webp',
-  '/images/team-itamar.webp'
+  '/images/team-itamar.webp',
+  '/learning-in-action/index.html',
+  '/learning-in-action/assets/css/styles.css',
+  '/learning-in-action/assets/js/main.js',
+  '/learning-in-action/assets/images/exploring-nature/01.jpg',
+  '/learning-in-action/favicon.svg'
 ];
 
 self.addEventListener('install', event => {

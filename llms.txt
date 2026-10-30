@@ -1,5 +1,5 @@
 # Revital Daycare
-Last-Modified: 2026-08-30
+Last-Modified: 2026-10-29
 > Quality preschool and early childhood education in Winnetka, CA. Serving children ages 3-5 with play-based, nurturing care and kindergarten readiness.
 
 ## Brand
@@ -24,6 +24,7 @@ Last-Modified: 2026-08-30
 - [Photo Gallery](https://revitaldaycare.com/gallery.html): Browse photos of classrooms, activities, and special moments
 - [Parent Reviews](https://revitaldaycare.com/parent-reviews.html): What parents are saying about Revital Daycare
 - [FAQ](https://revitaldaycare.com/faq.html): Answers to common questions about hours, enrollment, ratio, and curriculum
+- [Learning in Action](https://revitaldaycare.com/learning-in-action/): Explore play-led learning through nature, life skills, loose parts, process art, and science
 - [Contact](https://revitaldaycare.com/contact.html): Schedule a tour, get in touch, or ask about enrollment
 
 ## Local Pages

@@ -13,7 +13,7 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="/styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="/script.js" as="script">
+    <link rel="preload" href="/script.js?v=20261029" as="script">
     
     <!-- Third-party preconnect -->
     <link rel="preconnect" href="https://www.google-analytics.com">
@@ -239,6 +239,7 @@
                     <a href="parent-reviews.html">Parent Reviews</a><br>
                     <a href="blog.html">Blog</a><br>
                     <a href="faq.html">FAQ</a><br>
+                    <a href="/learning-in-action/">Learning in Action</a><br>
                     <a href="contact.html">Contact</a></p>
                 </div>
                 <div class="footer-section">
@@ -254,14 +255,7 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="/script.js?v=20261029" defer></script>
 
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
-        });
-      }
-    </script>
 </body>
 </html>
