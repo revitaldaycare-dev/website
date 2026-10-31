@@ -14,7 +14,7 @@
   --green-deep: #142d21;
   --leaf: #6f9b74;
   --leaf-soft: #e8efe4;
-  --clay: #bd6040;
+  --clay: #a04a2a;
   --clay-soft: #f4e0d5;
   --sun: #eebf5f;
   --line: rgba(32, 54, 43, 0.14);
@@ -682,7 +682,7 @@ p {
   position: absolute;
   top: 1.35rem;
   right: 1.4rem;
-  color: rgba(32, 54, 43, 0.2);
+  color: rgba(32, 54, 43, 0.7);
   font-family: var(--font-display);
   font-size: 1rem;
   font-style: italic;
